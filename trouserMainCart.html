@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin-left: 3%;
+        }
+        #CartContainer{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 15% 15% 15% 15% 15% 15%;
+            gap: 5px;
+            padding: 1%;
+           
+        }
+
+        #Productimg{
+            width: 20%;
+            border: 1px solid black;
+        }
+        #BtOrder{
+            width: 60px;
+            border-radius: 10px;
+            background: transparent;
+            border: 1px solid black;
+            padding: 8px 13px;
+            display: inline-block;
+            margin-left: 7%;
+        }
+        #BtOrder:hover{
+          color: white;
+            background-color: black;
+        }
+        #rmbtn{
+            width: 60px;
+            margin-left: -3%;
+            height: 30px;
+            border: none;
+            background-color: white;
+        }
+        #hbt:hover{
+           background-color: red;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head1">Cart</h1>
+    <a href="4-MenOrWomen.html" ><button id="SHOPMORE">CLICK HERE TO SHOP MORE !</button></a>
+    <div id="CartContainer">
+    </div>
+    <p id="Cartvalue"></p>
+   <a href="9-address.html"> <button id="BtOrder">Order Now</button></a>
+   <a href="trouserMainCart.html"><button id="rmbtn"><h2 id="hbt">&#128465</h2></button></a>
+    <script>
+         let PWCart=JSON.parse(localStorage.getItem("pullandbearProductCart"))
+         let parnt=document.getElementById("CartContainer")
+         function showprodcts(){
+         
+             PWCart.forEach(function(element){
+         let div1=document.createElement("div")
+         let Pimg=document.createElement("img")
+         Pimg.setAttribute("id","Productimg")
+         Pimg.src=element.ProductImage1
+         let Pprice=document.createElement("p")
+         Pprice.innerText="Price : $"+element.ProductPrice
+         let Psize=document.createElement("p")
+         Psize.innerText="Size :"+element.ProductSize
+         let Procolor=document.createElement("p")
+         Procolor.innerText="Color :"+element.ProductColour
+         let Pname=document.createElement("p")
+         Pname.innerText="Product Name :"+element.ProductName
+
+         div1.append(Pimg,Pname,Psize,Procolor,Pprice)
+         parnt.append(div1)
+             
+        //      let Pquantity=document.createElement("p")
+        //  Pquantity.innerText="Quantity :"+PWCart.length
+
+            //  let totalAmount =JSON.parse(localStorage.getItem("pullandbearProductCart"))
+            //  totalAmount.push(total.innerText)
+            //  console.log(totalAmount);
+            //  localStorage.setItem("pullandbearProductCart",JSON.stringify(totalAmount))
+            
+             });
+
+            
+
+
+             let hd1=document.getElementById("head1")
+             let bt1=document.getElementById("BtOrder")
+             let rt1=document.getElementById("rmbtn")
+             let prnt=document.getElementById("CartContainer")
+             let Shopmore=document.getElementById("SHOPMORE")
+             if(PWCart.length==0){
+               hd1.innerText="YOUR CART IS EMPTY"
+              bt1.style.visibility="hidden"
+               rt1.style.visibility="hidden"
+             }
+             else{
+                Shopmore.style.visibility="hidden"
+             }
+              // TO remove cart products
+              var rmbutn=document.getElementById("rmbtn")
+             rmbutn.onclick=function(){
+               if(PWCart.length>0) {PWCart.pop()
+             
+              // console.log(PWCart.length);
+               }
+               localStorage.setItem("pullandbearProductCart",JSON.stringify(PWCart))
+             }
+        //      let total=document.getElementById("Cartvalue")
+        //       var sum=0;
+        //      for(let i=0;i<PWCart.length;i++){
+        //         sum+=Number(element.ProductPrice)
+
+        //      }total.innerText="Total Cart Value : $"+sum
+        //    // push sum into localStorage
+        //      console.log(sum);
+
+             let total=document.getElementById("Cartvalue")
+function sum(){
+  var PWCart=JSON.parse(localStorage.getItem("pullandbearProductCart"))
+                let sum=0;
+               // console.log(trouserCart);
+             // console.log(products.price,"sssss");
+             for(let i=0;i<PWCart.length;i++){
+                sum+=Number(PWCart[i].ProductPrice)
+                //console.log(trouserCart.price);
+             }total.innerText="Toal Cart Value : $"+sum
+             console.log(sum);
+             
+            }sum()
+             
+         }
+         showprodcts()
+    </script>
+</body>
+</html>

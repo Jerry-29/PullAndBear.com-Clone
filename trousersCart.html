@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin-left: 3%;
+        }
+        #container{
+            width: 100%;
+            display: grid;
+             grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+            gap: 5px;
+            padding: 1%;
+           
+        }
+        #Productimg{
+            width: 20%;
+            border: 1px solid black;
+        }
+        #BtOrder{
+            width: 60px;
+            border-radius: 10px;
+            background: transparent;
+            border: 1px solid black;
+            padding: 8px 13px;
+            display: inline-block;
+            margin-left: 7%;
+
+        }
+        #BtOrder:hover{
+          color: white;
+            background-color: black;
+        }
+        #rmbtn{
+            width: 60px;
+            margin-left: -3%;
+            height: 30px;
+            border: none;
+            background-color: white;
+        }
+        #hbt:hover{
+           background-color: red;
+           
+        }
+    </style>
+</head>
+<h1 id="h1">Cart</h1>
+<div id="container"></div>
+<a href="4-MenOrWomen.html"><button id="shopmore">Click Here To Shop</button></a>
+<p id="Cartvalue"></p>
+<a href="9-address.html"> <button id="BtOrder">Order Now</button></a>
+<a href="trousersCart.html"><button id="rmbtn"><h2 id="hbt">&#128465</h2></button></a>
+<body>
+    <script>
+        var trouserCart=JSON.parse(localStorage.getItem("pullandbearProductCart"))
+        var parent=document.getElementById("container");
+  function showproducts() {
+ trouserCart.forEach (function (products){    
+  let div1= document.createElement("div");
+  let img=document.createElement("img");
+    img.setAttribute("id","Productimg")
+img.src=products.img;
+let product_price=document.createElement("p");
+//   product_price.setAttribute("id","productPrice");
+  let product_name=document.createElement("p");
+//   product_name.setAttribute("id","productName")
+  product_price.textContent="$"+products.price;
+  product_name.textContent=products.name;
+//   product_name.style.color="blue";
+//   product_price.style.color="#fb5607";
+
+
+
+  div1.append(img,product_name,product_price);
+  parent.append(div1);  
+ 
+// //Cart total Value
+
+
+});
+
+             let hd1=document.getElementById("h1")
+             let bt1=document.getElementById("BtOrder")
+             let rt1=document.getElementById("rmbtn")
+             let prnt=document.getElementById("CartContainer")
+             let Shopmore=document.getElementById("shopmore")
+             let pimag=document.getElementById("Productimg")
+             if(trouserCart.length==0){
+               hd1.innerText="YOUR CART IS EMPTY"
+              bt1.style.visibility="hidden"
+               rt1.style.visibility="hidden"
+             }
+             else{
+                Shopmore.style.visibility="hidden"
+             }
+             
+    let removebutton=document.getElementById("rmbtn")  
+removebutton.addEventListener("click",removep)
+function removep(){
+var trouserCart=JSON.parse(localStorage.getItem("pullandbearProductCart"))
+
+    if(trouserCart.length>0){
+        trouserCart.pop()
+    }
+  localStorage.setItem("pullandbearProductCart",JSON.stringify(trouserCart))
+}
+
+let total=document.getElementById("Cartvalue")
+function sum(){
+  var trouserCart=JSON.parse(localStorage.getItem("pullandbearProductCart"))
+                let sum=0;
+                console.log(trouserCart);
+             // console.log(products.price,"sssss");
+             for(let b=0;b<trouserCart.length;b++){
+                sum+=Number(trouserCart[b].price)
+                //console.log(trouserCart.price);
+             }total.innerText="Toal Cart Value : $"+sum
+             console.log(sum);
+            }sum()
+  }
+showproducts();
+
+
+
+    </script>
+</body>
+</html>

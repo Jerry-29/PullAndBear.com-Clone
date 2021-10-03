@@ -95,11 +95,48 @@
             font-size: 14px;
             margin: 0%;
             text-align: center;
-        }   
+        }
+        #nav{
+            position: fixed;
+            left: 70%;
+        }
+        #nav ul {
+            overflow: auto;
+        }
+
+        #nav li {
+            float: right;
+            list-style: none;
+        }
+
+        #nav li a {
+            padding: 5px 5px;
+            margin: 0% 10px;
+        }
+
+        #nav li :last-child {
+            display: inline-block;
+            font-size: 24px;
+            text-decoration: underline 3px;
+            vertical-align: top;
+            color: black;
+        }
        
     </style>
 </head>
 <body>
+    <header>
+        <nav id="nav">
+            <ul>
+                <li><a href=""><img src="https://pic.onlinewebfonts.com/svg/img_572840.png" alt="" width="20px"></a>
+                </li>
+                <li><a href=""><img src="https://pic.onlinewebfonts.com/svg/img_108423.png" width="20px" id="bag"></a>
+                </li>
+                <li><a href=""><img src="https://pic.onlinewebfonts.com/svg/img_466071.png" width="20px">&nbsp;SEARCH
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            </ul>
+        </nav>
+    </header>
     <div id="full_img">
         <h1>NEW IN</h1>
         <button class="shop" id="newshop">SHOP</button>
