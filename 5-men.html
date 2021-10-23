@@ -117,11 +117,23 @@
 
         #nav {
             position: fixed;
-            left: 70%;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
         }
 
-        #nav ul {
-            overflow: auto;
+        #n1 {
+            margin-left: 2%;
+        }
+
+        #n1>a {
+            font-size: larger;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        #n2 {
+            display: flex;
         }
 
         #nav li {
@@ -135,7 +147,6 @@
         }
 
         #nav li :last-child {
-            display: inline-block;
             font-size: 24px;
             text-decoration: underline 3px;
             vertical-align: top;
@@ -147,14 +158,22 @@
 <body>
     <header>
         <nav id="nav">
-            <ul>
-                <li><a href=""><img src="https://pic.onlinewebfonts.com/svg/img_572840.png" alt="" width="20px"></a>
-                </li>
-                <li><a href="2-signin.html"><img src="https://pic.onlinewebfonts.com/svg/img_108423.png" width="20px" id="bag"></a>
-                </li>
-                <li><a href="trousersCart.html"><img src="https://pic.onlinewebfonts.com/svg/img_466071.png" width="20px">&nbsp;SEARCH
+            <div id="n1">
+                <a href="5-men.html">MEN</a>
+                |
+                <a href="6-women.html">WOMEN</a>
+            </div>
+            <div id="n2">
+                <li><a href="#"><img src="https://pic.onlinewebfonts.com/svg/img_466071.png" width="20px">&nbsp;SEARCH
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-            </ul>
+                <li><a href="trousersCart.html"><img src="https://pic.onlinewebfonts.com/svg/img_572840.png" alt=""
+                            width="20px"></a>
+                </li>
+                <li><a href="2-signin.html"><img src="https://pic.onlinewebfonts.com/svg/img_108423.png" width="20px"
+                            id="bag"></a>
+                </li>
+
+            </div>
         </nav>
     </header>
     <div id="full_img">
@@ -218,14 +237,14 @@
     SWEATSHIRTS.addEventListener("click", SWEATSHIRT)
 
     function SWEATSHIRT() {
-        window.location.href ="5-B-sweatshirt&hoodies.html";
+        window.location.href = "5-B-sweatshirt&hoodies.html";
     }
 
     let JACKETS = document.querySelector("#JACKETS")
         .addEventListener("click", JACKET)
 
     function JACKET() {
-        window.location.href ="5-C-coats&jackets.html";
+        window.location.href = "5-C-coats&jackets.html";
     }
 
     let TROUSERS = document.querySelector("#TROUSERS")
