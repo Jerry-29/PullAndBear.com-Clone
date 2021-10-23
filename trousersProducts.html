@@ -5,240 +5,229 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trousers</title>
-    <style>
-        *{
-            margin-top: -2px;
-
-        }
-        #products {
-            margin: 5% 5% 10% 5%;
-            height: 600px;
-            display: grid;
-            grid-template-columns: 20% 20% 20% 20%;
-            grid-gap: 5%;
-            justify-content: center;
-        }
-
-        img {
-            width: 80%;
-          position: relative;
-            z-index: 1;
-        }
-
-        img:hover {
-  transition:.5s;
-  box-shadow: 10px 10px 5px #888888;
-        }
-         #bt1{
-            position: relative;
-            z-index: 2;
-            margin-left: -900px;
-         top: 160px;
-            width: 170px;
-         height: 80px;
-            background-color: inherit;
-            border: none;
-            cursor: pointer;
-        }
-         #bt2{
-            position: relative;
-            z-index: 2;
-            margin-left: 80px;
-            width: 170px;
-            top: 160px;
-            height: 80px;
-             background-color: inherit; 
-            border: none;
-            cursor: pointer;
-          }
-          #bt3{
-            position: relative;
-            z-index: 2;
-            margin-left: 80px;
-            width: 170px;
-            top: 160px;
-            height: 80px;
-             background-color: inherit; 
-            border: none;
-            cursor: pointer;
-          }
-          #bt4{
-            position: relative;
-            z-index: 2;
-            margin-left: 120px;
-            width: 170px;
-            top: 160px;
-            height: 80px;
-             background-color: inherit; 
-            border: none;
-            cursor: pointer;
-          }
-         
-          #cbtn{
-              font-size: 25px;
-              font-weight: 600;
-             border: none;
-             background-color: inherit;
-          }
-          .hl{
-              border-radius: 4px;
-              font-size: 25px;
-          }
-          #cartbtn{
-            border-radius: 10px;
-            background: transparent;
-            border: 1px solid black;
-            padding: 8px 13px;
-            display: inline-block;
-          }
-          #cartbtn:hover{
-              background-color:black;
-              color: white;
-
-          }
-         #backbtn{
-             font-size: 20px;
-             font-weight:600;
-             border-radius: 30px;
-         }
-         #ptxt{
-             margin-left: -40px;
-         }
-         #pprice{
-             margin-left: -40px;
-         }
-    </style>
+    <title>Trousers Page</title>
+    <link rel="stylesheet" href="trouseersProduct.css">
 </head>
 
 <body>
-    <a href="5-men.html"><button id="backbtn">&#8592</button></a>
-    <img src="https://i.imgur.com/PZpqYDZ.png" style="width:30%;margin-left: 35%;" />
-    <label style="font-size: 20px; color: lightcoral;"><strong>Filter</strong></label>
-    <button class="hl" id="slh1" onclick="slh()"></button>
-    <button class="hl" id="shl2" onclick="shl()"></button>
+    <div id="topdiv">
+        <a href="5-men.html"><button id="backbtn">&#8592</button></a>
+        <img id="home" src="logo1.png" style="width:25%;margin-left: 35%;" />
+       <div id="topbtn">
+        <button id="flt1" class="filterbtn " >See 2</button>
+        <button id="flt2" class="filterbtn">Filter</button>
+       </div>
+    </div>
+    <!-- <button class="hl" id="slh1" onclick="slh()"></button>
+    <button class="hl" id="shl2" onclick="shl()"></button> -->
       <!-- Change Me -->
-    <a href="trouser1.html"> <button style="width: 200px;" id="bt1"></button></a>
-    <a href="trouser2.html"><button id="bt2"></button></a>
-    <a href="trouser3.html"><button id="bt3"></button></a>
-    <a href="trouser4.html"><button id="bt4"></button></a>
-    <label id="cbtn">Cart<a href="trousersCart.html"><button  id="cbtn"><p class="tbt">&#128722</p><p id="btxt"></p></button></a></label>
+    <!-- <label id="cbtn">Cart<a href="trousersCart.html"><button  id="cbtn"><p class="tbt">&#128722</p><p id="btxt"></p></button></a></label> -->
     <div id="products">
-       <!-- <a><img id="Image"></a>  -->
-      
+    </div>
+    <div id="filterdiv">
+      <div id="filteropt">
+          <div id="filterhead">
+            <h4>Filter</h4>
+           <div id="filterHide">
+            <span>Hide Filter</span>
+            <button id="hidefilterbtn">&#10005</button>
+           </div>
+          </div>
+        <div>
+            <h4>Order by</h4>
+           <div id="filterByPriceDiv">
+            <button onclick="slh()">Priced From Low to High</button>
+            <button onclick="shl()">Priced From Low to High</button>
+           </div>
+         </div>
+         <div>
+             <h4>Colour</h4>
+            <div id="filterByColorDiv">
+               <div id="blackcolordiv">
+                <button id="blackSelect" style="background-color: black;"></button>
+                <p>Black</p>
+               </div>
+                <div id="bluecolordiv">
+                    <button id="blueSelect" style="background-color: blue"></button>
+                <p>Blues</p>
+                </div>
+            </div>
+           </div>
+         <div id="filterBySizeDivparent">
+          <h4>Sizes</h4>
+          <div id="filterBySizeDiv">
+              <button>X</button>
+              <button>L</button>
+              <button>M</button>
+              <button>S</button>
+          </div>
+         </div>
+         <div>
+            <h4 style="margin: auto;">Price Range</h4>
+            <input type="range" name="price range" id="priace range" >
+            <p id="showprice"></p>
+         </div>
+      </div>
     </div>
 </body>
 
 </html>
 <script>
     var list3 = [{
-        name: "Faded standard fit jeans",
+        name: "Blue-Faded standard fit jeans",
         price: 25,
         img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/519/800/8676519800_4_1_8.jpg?t=1632235002863&imwidth=563",
+        a:"trouser1.html",
+        value:7,
+        img2:"https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/519/800/8676519800_2_8_8.jpg?t=1628690507138&imwidth=750",
     },
     {
-        name: "Faded standard fit jeans",
+        name: "Black-Faded standard fit jeans",
         price: 35,
         img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/519/806/8676519806_4_1_8.jpg?t=1632238040653&imwidth=563",
+        a:"trouser2.html",
+        value:5,  
     },
     {
-        name: "Faded standard fit jeans",
+        name: "Black-Faded standard fit jeans",
         price: 38,
         img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/519/712/8676519712_4_1_8.jpg?t=1632235002775&imwidth=563",
+        value:5,
+        a:"trouser3.html"
     },
     {
-        name: "Faded standard fit jeans",
+        name: "Black-Faded standard fit jeans",
         price: 40,
         img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/519/506/8676519506_4_1_8.jpg?t=1631722920155&imwidth=563",
+        value:5,
+        a:"trouser3.html"
     },
     {
-        name: "Premium fabric joggers with logo",
+        name: "Black-Premium fabric joggers with logo",
         price: 45,
         img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/533/712/8676533712_4_1_8.jpg?t=1632734710030&imwidth=563",
+        value:5,
     },
     {
-        name: "Faded wide-leg jeans",
+        name: "Black-Faded wide-leg jeans",
         price: 45,
         img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/527/700/8676527700_4_1_8.jpg?t=1632734701191&imwidth=563",
+        value:5,
     },
     {
         name: "Navy blue joggers",
         img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/518/800/8676518800_4_1_8.jpg?t=1631549716380&imwidth=563",
         price: 45,
+        value:7,
     },
     {
-        name: "Coloured carpenter jeans",
+        name: "Black-Coloured carpenter jeans",
         price: 20,
         img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/526/800/8676526800_4_1_8.jpg?t=1630670909165&imwidth=563",
+        value:5,
     },
     {
-        name: "Basic piqué joggers",
+        name: "Navy blue Basic piqué joggers",
         price: 18,
         img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/503/809/8676503809_4_1_8.jpg?t=1631628505370&imwidth=563",
+        value:7,
     },
     {
         name: "Navy blue joggers",
         price: 15,
         img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/518/827/8676518827_4_1_8.jpg?t=1631628449244&imwidth=563",
-    },
+        value:7,
+     },
     {
         name: "Navy blue joggers",
         img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/518/401/8676518401_4_1_8.jpg?t=1630001356272&imwidth=563",
         price: 26,
+        value:7,
     },
     {
-        name: "Standard fit chino trousers",
+        name: "Black-Standard fit chino trousers",
         img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/514/712/8676514712_4_1_8.jpg?t=1629463027114&imwidth=563",
         price: 16,
+        value:5,
     }];
     var total = 0;
     var parent = document.getElementById("products");
     function showproducts(arr) {
         parent.innerHTML = null;
         list3.forEach(function (products) {
+            let divimg2 = document.createElement("div");
+            divimg2.setAttribute("id","divimg2")
             let div = document.createElement("div");
+            div.setAttribute("id","imgdiv")
+            // let filterdiv=document.createElement("div")
+            // filterdiv.setAttribute("id","filterdiv")
+            var Al=products.a
+            var array=[]
+            array.push(products.a)
+           div.addEventListener("click",productpage)
+           function productpage(){
+            window.location.href=products.a
+           }
+            let img2=document.createElement("img")
+            img2.setAttribute("id","hoverimg")
+            img2.src=products.img2
             let img = document.createElement("img");
-            // let photo=document.getElementById("")
             img.src = products.img;
-            let anch=document.createElement("a")
-            anch.href=products.href
-            let disappear = document.getElementById("choose");
-
-            //   disappear.onclick=function () {
-            //       var size=document.createElement("select");
-            //       size.style.option.value="L";
-            //   }
             let product_price = document.createElement("p");
             product_price.setAttribute("id","pprice")
             product_price.textContent = "$" + products.price;
             let product_name = document.createElement("p");
             product_name.setAttribute("id","ptxt")
             product_name.textContent = products.name;
-            product_name.style.color = "blue";
-            product_name.style.textAlign = "center";
-            product_price.style.color = "#fb5607";
-            product_price.style.textAlign = "center";
             total = total + products.price;
-            //   let hlink=document.createElement("p")
-            //   hlink.href=products.href
 
             let addtocart_btn = document.createElement("button");
             addtocart_btn.setAttribute("id","cartbtn")
             addtocart_btn.innerText = "Add to Cart";
             addtocart_btn.style.marginLeft = "20%";
-          
-            addtocart_btn.onclick = function () {
-                j=1
-                addtoCart(products);
-                alert("Your Product has been added in cart")
-                ccbtn = document.getElementById("cbtn")
-            };
-       
-
-            div.append(img,product_name,product_price, addtocart_btn);
-            parent.append(div);
+            div.append(img,img2)
+            divimg2.append(div,product_name,product_price);
+            parent.append(divimg2);
 
         });
+
+        var filterbtn=document.getElementById("flt2")
+    filterbtn.addEventListener("click",filterg)
+    var fildiv=document.getElementById("filterdiv")
+    var parentg= document.getElementById("products");
+    console.log(fildiv);
+    function filterg(){
+     fildiv.style.display="block"
+     fildiv.style.width="40%"
+     parentg.style.width="60%"
+     parentg.style.margin="0px";
+    //  parentg.style.backgroundColor="red"
+    //  fildiv.style.m="10px"
+    }
+    var hfd=document.getElementById("hidefilterbtn")
+    var parentgh= document.getElementById("products");
+    hfd.addEventListener("click",hidefilter)
+    function hidefilter(){
+        fildiv.style.display="none"
+        parentgh.style.width="100%"
+        parentg.style.gridTemplateColumns="20% 20% 20% 20%"
+    }
+    var parentg= document.getElementById("products");
+    var flt2=document.getElementById("flt1")
+    flt2.addEventListener("click",seeTwo)
+    var c=0;
+    function seeTwo(){
+        c++;
+        if(c%2!==0){
+            parentg.style.gridTemplateColumns="300px 300px"
+            flt2.textContent="See 4"
+        }
+        else if(c%2==0){
+            parentg.style.width="100%"
+            parentg.style.gridTemplateColumns="20% 20% 20% 20%"
+            flt2.innerText="See 2"
+        }
+    }
     };
     showproducts();
     console.log(total);
@@ -251,7 +240,6 @@
         products_cart.push(p);
         txt.innerText="Items :"+products_cart.length
                localStorage.setItem("pullandbearProductCart", JSON.stringify(products_cart));
-        // console.log("product_cart:",products_cart);
     };
     function slh() {
         var arr = list3.sort(function (a, b) {
@@ -266,13 +254,46 @@
         });
         showproducts(arr);
     }
-    var find = document.getElementById("slh1");
-    find.innerHTML = "&#10136;";
-    var find1 = document.getElementById("shl2");
-    find1.innerHTML = "&#10138;";
-
-    // var data = [{ img: "click1.html", }, {
-    //     img: "click2.html",
-    
-
+    console.log(list3);
+    var blackSelect=document.getElementById("blackSelect")
+     blackSelect.addEventListener("click",selBlack)
+    //  var black=list3.filter(function(el){
+    //      return el.value==5
+    //  })
+    //  console.log(black);
+    var k=0;
+    function selBlack(){
+        k++
+        var bl=list3.sort(function(a,b){
+        if(k%2!==0){
+            return (a.value-b.value);
+        }
+        else{
+            window.location.href="trousersProducts.html"
+        }
+        
+        })
+        console.log(bl);
+        showproducts(bl);
+    }
+    var b=0;
+    var blueSelect=document.getElementById("blueSelect")
+    blueSelect.addEventListener("click",selBlack)
+    function selBlue(){
+        b++;
+        var blu=list3.sort(function(a,b){
+            if(b%2==0){
+            return (b.value-a.value);
+        }else{
+            window.location.href="trousersProducts.html"
+        }
+        })
+        console.log(blu);
+        showproducts(blu);
+    }
+    var hm=document.getElementById("home")
+    hm.addEventListener("click",home)
+    function home(){
+        window.location.href="trousersProducts.html"
+    }
 </script>
