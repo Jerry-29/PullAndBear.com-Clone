@@ -1,0 +1,62 @@
+
+        * {
+            font-family: Graphik Cond Web, Graphik, sans-serif;
+        }
+
+        body {
+            background-image: url(https://static.pullandbear.net/2/static2/itxwebstandard/images/worldwide/background.jpg?t=20210928025001);
+            background-size: cover;
+        }
+
+        .mid {
+            /* border:2px solid white; */
+            vertical-align: bottom;
+            width: 60%;
+            margin: 12% auto;
+
+        }
+
+        img {
+            width: 100%;
+            height: 140px;
+        }
+
+        #selector {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 29% 29% 29% 20%;
+            margin-top: 5%;
+            justify-content: center;
+            /* border:2px solid teal; */
+
+
+        }
+
+        #black {
+            background-color: black;
+            border: none;
+            color: white;
+            height: 50px;
+            margin: 8px;
+            vertical-align: middle;
+            font-size: 18px;
+            letter-spacing: 2px;
+            width: 140px;
+
+        }
+
+        #black:hover {
+            background-color: #1DE9B6;
+
+        }
+
+        select {
+            /* size: "5"; */
+            height: 50px;
+            margin: 8px;
+            font-size: medium;
+            padding: 10px;
+            border: none;
+
+        }
+ 
