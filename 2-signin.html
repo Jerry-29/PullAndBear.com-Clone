@@ -7,81 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signin</title>
 
-    <style>
-        body {
-            background-image: url("https://static.pullandbear.net/2/static2/itxwebstandard/images/home/2021-09/24/1400/Newin_man.jpg?v=20210929162516");
-            background-size: cover;
-        }
-
-        * {
-            font-family: Graphik Cond Web, Graphik, sans-serif;
-        }
-
-        h2 {
-            text-align: center;
-            padding-top: 15px;
-            /* color:beige; */
-        }
-
-        #signinbox {
-            width: 30%;
-            height: 70%;
-            background-color: #F5F5F5;
-            /* margin:0% 2% 10% 71%;  */
-
-
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-
-            border: 1 px solid salmon;
-
-        }
-
-        input {
-            margin: 4%;
-            height: 30px;
-            border: none
-        }
-
-        button {
-            height: 40px;
-            width: 90%;
-            margin: 4%;
-            border: none;
-            background-color: #263238;
-            color: white;
-            font-size: 16px;
-
-        }
-
-        #sign {
-            background-color: black;
-            color: white;
-        }
-
-        #CYA {
-            margin-bottom: 6%;
-            height: 40px;
-
-        }
-
-        .page {
-            display: flex;
-            flex-direction: row-reverse;
-
-        }
-
-        .test {
-
-            margin-right: 8%;
-            margin-top: 2%;
-
-
-        }
-    </style>
+   <link rel="stylesheet" href="./CSS/2-signin.css">
 
 
 </head>
@@ -122,53 +48,5 @@
 
 </html>
 
-<script>
 
-    function signin(e) {
-        e.preventDefault();
-
-        let myForm = document.getElementById("myForm");
-        console.log(myForm);
-
-        let email = myForm.email.value;
-        let password = myForm.password.value;
-
-        console.log("data", email, password);
-
-        let existing_users = JSON.parse(localStorage.getItem("users"));
-
-
-        //----- validation part-----------//
-
-        var count = 0;
-        existing_users.forEach(function (user) {
-
-            if (email === user.email && password === user.password) {
-                //alert ("Logged in successfully")
-
-                window.location.href = "4-MenOrWomen.html";
-                count++;
-            }
-
-            else if (email === user.email && password !== user.password) {
-                window.alert("Email or Password is incorrect");
-            };
-
-        });
-        // if(count == 0) { window.alert("create your account.")}
-        if (count > 0) { window.alert("logged in successfully") }
-        else if (count == 0) { window.alert("This email is not registered with us.") }
-
-        myForm.email.value = "";
-        myForm.password.value = "";
-        count = 0;
-
-    }
-
-
-
-    //  line  144 - fix html page..
-
-
-
-</script>
+<script src="./script/2-signin.js"></script>
