@@ -11,6 +11,7 @@
             width: 100%;
             display: flex;
             gap: 1%;
+            height: 590px;
         }
         #typeOfDeliveryDiv{
             width: 70%;
@@ -19,7 +20,7 @@
         }
         #productDiv{
             width: 28%;
-            height: 580px;
+            height: 490px;
             
         }
         #logodiv{
@@ -48,6 +49,7 @@
         hr{
             height: 2px;
             width: 40%;
+            background-color: black;
         }
         #step3{
             color: black;
@@ -106,7 +108,7 @@
             border: 1px solid black;
         }
         #addItem{
-            height:510px;
+            height:490px;
             width: 100%;
             border: 1px solid black;
             display: grid;
@@ -177,15 +179,16 @@
            <div id="flexitems"></div>
         </div>
         <div id="totalCartValue">
-            <p>Total</p>
+            <p id="totalprice">Total</p>
         </div>
    </div>
     </div>
 </body>
 </html>
 <script>
+    var i=0;
     let PWCart=JSON.parse(localStorage.getItem("pullandbearProductCart"))
-    console.log(PWCart.length);
+    // console.log(PWCart.length);
     let parnt=document.getElementById("flexitems")
     function showprodcts(){
         PWCart.forEach(function(element){
@@ -204,28 +207,16 @@
     Pname.innerText="Product Name :"+element.ProductName
     var remButton=document.createElement("button")
     remButton.setAttribute("id","remButton")
-    remButton.addEventListener("click",removep)
-        function removep(){
-        var existingItems = JSON.parse(localStorage.getItem('pullandbearProductCart'))
-        var itemIndex=1
-        existingItems.splice(itemIndex,1)
-        localStorage.setItem('pullandbearProductCart', JSON.stringify(existingItems));
-    }
-
-   
+    remButton.innerText=i
+    
    
    var div2=document.createElement("div")
    div2.setAttribute("id","div2")
    div2.append(Pimg)
-    div1.append(Pname,Procolor,Psize,remButton)
+    div1.append(Pname,Procolor,Psize,Pprice,remButton)
+    i++;
     parnt.append(div2,div1)
         });
-        
-//         var existingItems = JSON.JSON.parse(localStorage.getItem('cartItems'))
-// var itemIndex = 1 // index of item to be removed
-
-// existingItems.splice(itemIndex, 1)
-
 // localStorage.setItem('cartItems', JSON.stringify(existingItems));
 
         // let hd1=document.getElementById("head1")
@@ -248,26 +239,36 @@
 //           }
 //           localStorage.setItem("pullandbearProductCart",JSON.stringify(PWCart))
 //         }
-//    //      let total=document.getElementById("Cartvalue")
-//    //       var sum=0;
-//    //      for(let i=0;i<PWCart.length;i++){
-//    //         sum+=Number(element.ProductPrice)
 
-//    //      }total.innerText="Total Cart Value : $"+sum
-//    //    // push sum into localStorage
-//    //      console.log(sum);
+        let total=document.getElementById("totalprice")
+function sum(){
+var PWCart=JSON.parse(localStorage.getItem("pullandbearProductCart"))
+        let sum=0;
+        for(let i=0;i<PWCart.length;i++){
+           sum+=Number(PWCart[i].ProductPrice)
+        }total.innerText="Toal Cart Value : $"+sum
+        console.log(sum);
+       }sum()
+var rem=document.getElementById("remButton")
+console.log(rem.innerText);
+       rem.onclick=function(){
+        var existingItems = JSON.parse(localStorage.getItem('pullandbearProductCart'))
+        // console.log(existingItems);
+        // for(var m=0;m<existingItems.length;m++){
+        //     // rem.innerText=i
+        // }
+         var i=rem.innerText
+        existingItems.splice(i,1)
+            localStorage.setItem('pullandbearProductCart', JSON.stringify(existingItems));  
+            // console.log(e);
+        window.location.href="cartPage.html"
+    }
+    showprodcts(existingItems)
 
-//         let total=document.getElementById("Cartvalue")
-// function sum(){
-// var PWCart=JSON.parse(localStorage.getItem("pullandbearProductCart"))
-//            let sum=0;
-//         for(let i=0;i<PWCart.length;i++){
-//            sum+=Number(PWCart[i].ProductPrice)
-//         }total.innerText="Toal Cart Value : $"+sum
-//         console.log(sum);
-        
-//        }sum()
-        
     }
     showprodcts()
+   
+    
+
+    
  </script>
