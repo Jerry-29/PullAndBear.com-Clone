@@ -2,7 +2,7 @@ let PWCart=JSON.parse(localStorage.getItem("pullandbearProductCart"))
 // console.log(PWCart.length);
 let parnt=document.getElementById("flexitems")
 function showprodcts(){
-    PWCart.forEach(function(element){
+    PWCart.forEach(function(element,index){
 let div1=document.createElement("div")
 div1.setAttribute("id","div1")
 let Pimg=document.createElement("img")
@@ -19,6 +19,10 @@ Pname.innerText="Product Name :"+element.ProductName
 var remButton=document.createElement("button")
 remButton.setAttribute("id","remButton")
 remButton.innerText="Remove Item"
+remButton.addEventListener("click",function(){
+    deletItem(index)
+    window.location.href="cartPage.html"
+})
 var div2=document.createElement("div")
 div2.setAttribute("id","div2")
 div2.append(Pimg)
@@ -61,26 +65,37 @@ var PWCart=JSON.parse(localStorage.getItem("pullandbearProductCart"))
     // }
 
    }sum()
-var rem=document.getElementById("remButton")
-console.log(rem.innerText);
-   rem.onclick=function(){
-    var existingItems = JSON.parse(localStorage.getItem('pullandbearProductCart'))
+
+   var home=document.getElementById("homeclicked")
+   var add=document.getElementById("addressInp")
+   var homeclickdiv=document.getElementById("homeclickdiv")
+   home.onclick=function(){
+       add.style.visibility="visible"
+       homeclickdiv.style.visibility="hidden"
+   }
+// var rem=document.getElementById("remButton")
+// console.log(rem.innerText);
+//    rem.onclick=function(){
+//     var existingItems = JSON.parse(localStorage.getItem('pullandbearProductCart'))
+    function deletItem(index){
+        PWCart.splice(index,1)
+        localStorage.setItem("pullandbearProductCart",JSON.stringify(PWCart))
+        showprodcts(PWCart)
+    }
     // console.log(existingItems);
     // for(var m=0;m<existingItems.length;m++){
     //     // rem.innerText=i
     // // }
     //  var i=rem.innerText
-    var i= existingItems.indexOf(rem)
-    existingItems.splice(i,1)
+    // var i= existingItems.indexOf(rem)
+    // existingItems.splice(i,1)
     // var f=document.getElementById("addItem")
     // if(existingItems.length==0){
     // f.innerHTML="<h1>Cart is Empty</h1>"
     // }
-        localStorage.setItem('pullandbearProductCart', JSON.stringify(existingItems));  
-        // console.log(e);
-    window.location.href="cartPage.html"
-}
-showprodcts(existingItems)
+    //     localStorage.setItem('pullandbearProductCart', JSON.stringify(existingItems));  
+    //     // console.log(e);
+    // window.location.href="cartPage.html
 
 }
 showprodcts()

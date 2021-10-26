@@ -26,24 +26,40 @@
             </div>
             <div id="deltype">
                 <div class="home">
-                    <input type="radio">
-                   <p class="homeicon">
-                    <i class="fa fa-home" style="font-size:36px"></i>
-                   </p>
-                   <h4>Home Delivery</h4>
-                    <p>Monday</p>
-                    <p class="free">Free</p>
+                  <div id="homeclickdiv">
+                    <input id="homeclicked" type="radio">
+                    <p class="homeicon">
+                     <i class="fa fa-home" style="font-size:36px"></i>
+                    </p>
+                    <h4>Home Delivery</h4>
+                     <p>Monday</p>
+                     <p class="free">Free</p>
+                  </div>
+                    <div id="addressInp">
+                        <input placeholder="Name" type="text" name="" id="">
+                        <input placeholder="House No." type="text" name="" id="">
+                        <input placeholder="Area" type="text" name="" id="">
+                        <input placeholder="Landmark" type="text" name="" id="">
+                        <input placeholder="Pin Code" type="number" name="" id="">
+                        <input placeholder="City" type="text" name="" id="">
+                        <input placeholder="State" type="text" name="" id="">
+                        <input placeholder="Mobile No." type="number" name="" id="">
+                        <button id="subbtn">Submit</button>
+                    </div>
                 </div>
-                <div class="home">
-                   <input type="radio">
+                
+                <div id="home" class="home">
+                   <input id="storeclicked" type="radio">
                     <p class="homeicon">
                       <i class='fas fa-store-alt' style='font-size:36px'></i>
                     </p>
                     <h4>Store Delivery</h4>
                      <p>Monday</p>
                      <p class="free">Free</p>
+                    
             </div>
         </div>
+       
     </div>
     <div id="productDiv">
         <div id="OrderSummary">
@@ -59,6 +75,7 @@
         </div>
    </div>
     </div>
+    
 </body>
 </html>
 <script src="cartPage.js"></script>
