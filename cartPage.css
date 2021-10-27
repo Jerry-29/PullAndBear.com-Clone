@@ -228,6 +228,7 @@ hr {
 .OS{
     margin-left: 40%;
 }
+
 #remButton{
     width: 50%;
     height: 25px;
@@ -247,4 +248,109 @@ hr {
     width: 70px;
     color: black;
     margin-left: 1%;
+}
+#paymentdetail{
+  visibility: hidden;
+  position: relative;
+  z-index: 0;
+  width: 200%;
+  height: 160%;
+ bottom: 230%;
+
+}
+ .paydiv{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+display: grid;
+grid-template-columns: repeat(2,44%);
+padding: 2%;
+gap: 10%;
+}
+
+.paydiv>div{
+  border: 1px solid black;
+}
+.flex{
+  display: flex;
+}
+
+.dbtselect{
+ width: 20%;
+ height: 20%;
+ border: 1px solid;
+ margin-top: 5%;
+}
+#paydetail{
+  visibility: hidden;
+  position: relative;
+  z-index: 100000;
+  width: 200%;
+  height: 200%;
+  bottom: 400%;
+  display: flex;
+  flex-direction: column;
+}
+#finalpaydetail{
+  position: relative;
+  display: grid;
+  height: 60%;
+  grid-template-columns: 100%;
+  flex-direction: column;
+  gap: 5%;
+  justify-items: center;
+
+  
+}
+#finalpaydetail>input{
+ width: 80%;
+ margin: .2%;
+ position: relative;
+ margin-top: 10px;
+ height: 70%;
+ cursor: pointer;
+ z-index: 100000
+}
+#finalpaydetail>h4{
+  margin: 1%;
+}
+
+.finalpaydiv{
+  width: 80%;
+  position: relative;
+  height: 30%;
+  margin: .2%;
+  margin-top: 10px;
+  margin-left: 10%;
+}
+.finalpay{
+   margin: 10%;
+   width: 25%;
+   height: 30%;
+   margin-left: 36%;
+   margin-top: 5%;
+   border-radius: 20px;
+   border: 1px solid lightslategray;
+   font-size: 12px;
+   font-weight: 300;
+
+}
+.finalpay:hover{
+  background-color: black;
+  color: whitesmoke;
+  z-index: 1000;
+  position: relative;
+} 
+#debitimg{
+  width: 30%;
+}
+.logonb{
+  width: 30%;
+}
+.logoupi{
+  width: 30%;
+  height: 40%;
+  margin-left: 10%;
+  margin-top: 6%;
 }
