@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       #cartDiv{
+           width: 100%;
+           height: 515px;
+           background-color: blue;
+       }
+    </style>
+</head>
+
+<body>
+    <div id="cartDiv">
+        <div id="typeOfDeliveryDiv">
+            <div id="logodiv">
+                <img id="LOGO1" src="logo1.png">
+            </div>
+            <div id="orderStatus">
+                <span id="step1">1</span>
+                <hr>
+                <span id="step2">2</span>
+                <hr>
+                <span id="step3">3</span>
+            </div>
+            <div id="PaymentType">
+                <div class="debitCard debitCard2">
+                    <div>
+                        <input class="selectdebit" type="radio">
+                        <h4>Debit/Credit Card</h4>
+                    </div>
+                    <!-- <div>
+                       <input class="deb" type="text" placeholder="Card Number">
+                       <input class="deb" type="text" placeholder="Expiry date">
+                       <input class="deb" type="text" placeholder="CVV">
+                       <input class="deb" type="text" placeholder="Card Holder Name">
+                       <button>Pay <p class="AmountToBePAy"></p></button>
+                    </div> -->
+                </div>
+                <div class="NetBanking">
+                    <div>
+                        <input class="NetbankingSelect" type="radio">
+                        <h4>NetBanking</h4>
+                    </div>
+                    <!-- <div>
+                        <input class="Nb" type="text" placeholder="UserName">
+                        <input class="Nb" type="password" placeholder="Password">
+                        <input class="Nb" type="text" placeholder="Bank Name">
+                    </div> -->
+                </div>
+                <div class="UPI">
+                  <div>
+                    <input class="upiSelect" type="radio">
+                    <h4>UPI</h4>
+                  </div>
+                  <!-- <div>
+                      <input type="text" placeholder="Enter your UPI Id">
+                      <h4>Or</h4>
+                      <h3>Scan QR</h3>
+                      <img src="">
+                  </div> -->
+                </div>
+                <div class="CashOndelivery">
+                    <div>
+                        <input type="text" type="radio" class="CODselect">
+                        <h4>Cash ON delivery</h4>
+                    </div>
+                     <!-- <div>   
+                     </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="productDiv">
+        <div id="OrderSummary">
+            <p class="OS">Order summery</p>
+        </div>
+        <div id="addItem">
+            <div id="flexitems">
+
+            </div>
+        </div>
+        <div id="totalCartValue">
+            <p id="itemNo">Item No</p>
+            <p id="totalprice"></p>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

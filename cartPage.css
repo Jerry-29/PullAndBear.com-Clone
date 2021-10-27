@@ -3,6 +3,7 @@
   display: flex;
   gap: 1%;
   height: 590px;
+  
 }
 #typeOfDeliveryDiv {
   width: 70%;
@@ -58,10 +59,15 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
 }
-.home {
+.hom1 {
   width: 40%;
   height: 160px;
   margin-bottom: 140px;
+  border: 1px solid black;
+}
+.hom2{
+    width: 40%;
+  height: 160px;
   border: 1px solid black;
 }
 .store {
@@ -78,13 +84,14 @@ hr {
 }
 .home p {
   text-align: center;
-  line-height: 0px;
+  line-height: 8px;
 }
-input {
-  width: 30px;
-  height: 30px;
+.addinp {
+  width: 3%;
+  height: 5%;
   margin-left: 24%;
   position: fixed;
+  cursor: pointer;
 }
 .free {
   color: green;
@@ -97,13 +104,18 @@ input {
 }
 #totalCartValue {
   position: fixed;
-  width: 95%;
+  width: 27.7%;
   font-weight: 700;
   height: 50px;
   border: 1px solid black;
+  display: flex;
+  gap: 10px;
+}
+#totalCartValue p{
+  width: 60%;
 }
 #addItem {
-  height: 490px;
+  height: 100%;
   width: 100%;
   border: 1px solid black;
   display: grid;
@@ -115,6 +127,7 @@ input {
 #Productimg {
   width: 80%;
   height: 80%;
+  padding: 4%;
 }
 #flexitems {
   display: flex;
@@ -122,22 +135,35 @@ input {
   height: 40%;
   flex-direction: row;
   flex-wrap: wrap;
+  
 }
 #div1 {
-  width: 60%;
+  width: 59%;
 }
 #div2 {
   width: 40%;
 }
+#address{
+    width: 96%;
+    z-index: 15;
+    border: 1px solid grey;
+    height: 320px;
+    margin-top: -180px;
+    visibility: hidden;
+    margin-right: 6%;
+}
+#enteradd{
+    margin:0px;
+    margin-left: 15px;
+}
 #addressInp {
   width: 100%;
-  height: 200px;
-  margin-top: -135px;
+  height: 300px;
+  margin-top: 10px;
   margin-left: -15px;
   display: grid;
   grid-template-columns: repeat(2, 42%);
   gap: 10px;
-  visibility: hidden;
   /* flex-wrap: nowrap;
    justify-content:space-evenly; */
   z-index: 9;
@@ -147,14 +173,78 @@ input {
   height: 20px;
   position: relative;
 }
-#subbtn {
+.proceed {
   color: black;
-  width: 160px;
+  width: 140px;
   margin-left: 120px;
-  margin-top: 10px;
+  margin-top: 15px;
   border-radius: 20px;
+  border: 1px solid grey;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: whitesmoke;
+  cursor: pointer;
 }
-#subbtn:hover{
+.proceed:hover{
     background-color: black;
     color: white;
+}
+#addressHub{
+    font-size: 100%;
+    font-weight: 500;
+    margin-top: -120px;
+    visibility: hidden;
+
+}
+.pelement{
+    margin: 4px;
+    font-size: 80%;
+}
+#quant{
+    width: 25px;
+    color: black;
+    margin-left: 10px;
+}
+.und{
+    text-decoration: underline;
+    line-height: 16px !important;
+}
+#addmore{
+    margin-left: 4%;
+    border-radius: 10px;
+    border: none;
+    height: 22px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+#addmore:hover{
+    background-color: black;
+    color: white;
+}
+#totalprice{
+    margin-left: 1%;
+}
+.OS{
+    margin-left: 40%;
+}
+#remButton{
+    width: 50%;
+    height: 25px;
+    font-size: 60%;
+    border-radius: 20px;
+    border: none;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+#remButton:hover{
+    background-color: black;
+    color: white;
+    font-size: 60%;
+    font-weight: 300;
+}
+#itemNo{
+    width: 70px;
+    color: black;
+    margin-left: 1%;
 }
