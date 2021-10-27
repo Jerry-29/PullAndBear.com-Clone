@@ -10,11 +10,13 @@
         * {
             font-family: Graphik Cond Web, Graphik, sans-serif;
         }
-
+        body{
+            width: 100%; height: 100%;
+        }
         #full_img {
             background-image: url("https://static.pullandbear.net/2/static2/itxwebstandard/images/home/2021-09/24/1400/Newin_man.jpg?v=20210928025001"), url("https://static.pullandbear.net/2/static2/itxwebstandard/images/home/2021-09/24/1400/Newin_man.jpg?v=20210928025001");
             width: 100%;
-            height: 600px;
+            height: 100%;
             margin: 0%;
             padding: 0%;
             border: 1px solid white;
@@ -28,7 +30,9 @@
             font-size: 48px;
             color: white;
         }
-
+        #full_img>button{
+            margin-bottom: 10%;
+        }
         #newshop {
             margin-left: 48%;
             color: white;
@@ -65,18 +69,22 @@
         #cat {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 1%;
+            column-gap: 10px;
         }
 
         .product>h1 {
             margin: 2% 0% 2.5% 0%;
             font-size: 20px;
         }
+        .product > img{
+            width: 100%;
+            height: 80%;
+        }
 
         #full_img2 {
             background-image: url("https://static.pullandbear.net/2/static2/itxwebstandard/images/home/2021-09/24/1400/Jeans_man.jpg?v=20210928025001"), url("https://static.pullandbear.net/2/static2/itxwebstandard/images/home/2021-09/24/1400/Jeans_man.jpg?v=20210928025001");
             width: 100%;
-            height: 690px;
+            height: 100%;
             margin: 20px 0px 10px 0px;
             border: 1px solid white;
         }
@@ -84,6 +92,9 @@
         #full_img2>h1 {
             font-size: 30px;
             margin-top: 35%;
+        }
+        #full_img2>button{
+            margin-bottom: 10%;
         }
 
         #myVideo {
@@ -118,7 +129,7 @@
         #nav {
             position: fixed;
             display: grid;
-            grid-template-columns: 3fr 1fr;
+            grid-template-columns:  3.5fr 1fr;
         }
 
         #n1 {
@@ -135,22 +146,17 @@
         #n2 {
             display: flex;
         }
-
-        #nav li {
-            float: right;
-            list-style: none;
+        #search{
+            margin-top: 1%;
+            background: transparent;
+            border: 2px solid black;
+            border-radius: 10px;
+            /* height: 55%;         
+            width: 80%; */
         }
-
-        #nav li a {
+        #nav a {
             padding: 5px 5px;
             margin: 0% 10px;
-        }
-
-        #nav li :last-child {
-            font-size: 24px;
-            text-decoration: underline 3px;
-            vertical-align: top;
-            color: black;
         }
     </style>
 </head>
@@ -164,15 +170,9 @@
                 <a href="6-women.html">WOMEN</a>
             </div>
             <div id="n2">
-                <li><a href="#"><img src="https://pic.onlinewebfonts.com/svg/img_466071.png" width="20px">&nbsp;SEARCH
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                <li><a href="trousersCart.html"><img src="https://pic.onlinewebfonts.com/svg/img_572840.png" alt=""
-                            width="20px"></a>
-                </li>
-                <li><a href="2-signin.html"><img src="https://pic.onlinewebfonts.com/svg/img_108423.png" width="20px"
-                            id="bag"></a>
-                </li>
-
+                <input type="text" placeholder="Search..." id="search">
+                <a href="trousersCart.html"><img src="https://pic.onlinewebfonts.com/svg/img_572840.png" alt="" width="20px"></a>
+                <a href="2-signin.html"><img src="https://pic.onlinewebfonts.com/svg/img_108423.png" width="20px" id="bag"></a>
             </div>
         </nav>
     </header>
@@ -208,7 +208,7 @@
     <div id="vdo">
         <video autoplay muted loop id="myVideo">
             <source
-                src="https://player.vimeo.com/external/607544685.hd.mp4?s=fa901b30881ce4d68912029ac59561eabf29d221&profile_id=175"
+                src="https://player.vimeo.com/external/632005722.hd.mp4?s=db37e3509c1640ac8ae0463b2ba06177d3473821&profile_id=175"
                 type="video/mp4">
         </video>
     </div>
