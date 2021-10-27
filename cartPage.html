@@ -38,16 +38,52 @@
                     <div id="address">
                         <h3 id="enteradd">Enter Your Address </h3>
                         <div id="addressInp">
-                         <input placeholder="Name" type="text" name="" class="addinp">
-                        <input placeholder="House No." type="text" name="" class="addinp">
-                        <input placeholder="Area" type="text" name="" class="addinp">
-                        <input placeholder="Landmark" type="text" name="" class="addinp">
-                        <input placeholder="Pin Code" type="number" name="" class="addinp">
-                        <input placeholder="City" type="text" name="" class="addinp">
-                        <input placeholder="State" type="text" name="" class="addinp">
-                        <input placeholder="Mobile No." type="text" name="" class="addinp" value="">
-                        <button class="proceed"  id="subbtn1">Proceed</button>
+                         <input id="ad1" placeholder="Name" type="text" name="" class="addinp">
+                        <input id="ad2" placeholder="House No." type="text" name="" class="addinp">
+                        <input id="ad3" placeholder="Area" type="text" name="" class="addinp">
+                        <input id="ad4" placeholder="Landmark" type="text" name="" class="addinp">
+                        <input id="ad5" placeholder="Pin Code" type="number" name="" class="addinp">
+                        <input id="ad6" placeholder="City" type="text" name="" class="addinp">
+                        <input id="ad7" placeholder="State" type="text" name="" class="addinp">
+                        <input id="ad8" placeholder="Mobile No." type="text" name="" class="addinp" >
+                        <button  class="proceed"  id="subbtn1">Proceed</button>
                         </div>
+                    </div>
+                    <div id="paymentdetail">
+                     <div class="paydiv">
+                        <div id="debitcardClicked" class="flex">
+                            <input id="dbt1click" class="dbtselect" type="radio">
+                            <h4>Debit Card</h4>
+                            <img id="debitimg" src="debitCard.png"/>
+                        </div>
+                        <div class="Netbankinselected flex">
+                            <input id="nbselect" class="dbtselect" type="radio">
+                            <h4>Net Banking</h4>
+                            <img class="logonb" src="netbanking.png"/>
+                        </div>
+                        <div class="UPIQR flex">
+                            <input id="upiselected" class="dbtselect" type="radio">
+                            <h4>UPI QR Scan</h4>
+                            <img class="logoupi" src="upilogo.png"/>
+                        </div>
+                        <div class="CODselected flex">
+                            <input id="codselected" class="dbtselect" type="radio">
+                            <h4>Cash On Delivery</h4>
+                            <img class="logonb" src="codlogo.png"/>
+                        </div>
+                     </div>
+                    </div>
+                    <div id="paydetail">
+                      <div id="finalpaydetail">
+                          <h4 id="payhead">Enter your Card Details</h4>
+                        <input type="text" name="CardHolderName" id="inp1" placeholder="Card Holder Name">
+                        <input type="text" name="CardNumber" id="inp2" placeholder="Card Number">
+                        <input type="text" name="CVV" id="inp3" placeholder="CVV">
+                        <input type="text" name="EXP" id="inp4" placeholder="Expiry Date MM/YYYY">
+                      </div>
+                      <div class="finalpaydiv">
+                          <button id="finalAmount" class="finalpay">Pay</button>
+                      </div>
                     </div>
                 </div>
                 
