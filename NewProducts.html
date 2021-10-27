@@ -5,90 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New</title>
-    <style>
-        #main {
-            margin: 5% 5% 10% 5%;
-            height: 600px;
-            display: grid;
-            grid-template-columns: 20% 20% 20% 20%;
-            grid-gap: 5%;
-            justify-content: center;
-        }
-
-        img {
-            width: 100%;
-        }
-
-        * {
-            font-family: Graphik Cond Web, Graphik, sans-serif;
-        }
-
-        #slh1 {
-            justify-self: left;
-            width: 200px;
-            height: 60px;
-            font-size: larger;
-            color: darkturquoise;
-            background-color: white;
-            border: 4px solid royalblue;
-        }
-
-        #slh1:hover {
-            background-color: black;
-            border-radius: 10px;
-            box-shadow: blanchedalmond;
-            border: 4px solid orange;
-        }
-
-        #shl2 {
-            justify-self: left;
-            width: 200px;
-            height: 60px;
-            font-size: larger;
-            color: darkturquoise;
-            background-color: white;
-            border: 4px solid royalblue;
-        }
-
-        #shl2:hover {
-            color: white;
-            background-color: black;
-        }
-
-        button {
-            border-radius: 10px;
-            background: transparent;
-            border: 1px solid black;
-            padding: 8px 13px;
-            display: inline-block;
-
-        }
-
-        button:hover {
-            background-color: black;
-            color: white;
-        }
-
-        img:hover {
-            transition: .5s;
-            box-shadow: 10px 10px 5px #888888;
-        }
-    </style>
+    <title>Trousers Page</title>
+    <link rel="stylesheet" href="trouseersProduct.css">
 </head>
 
 <body>
-    <img src="https://i.imgur.com/PZpqYDZ.png" style="width:30%;margin-left: 35%;" />
-    <button id="slh1" onclick="slh()"></button>
-    <button id="shl2" onclick="shl()"></button>
-    <a href="5-men.html"><button id="backbtn">&#8592</button></a>
-    <div id="main">
+    <div id="topdiv">
+        <a href="5-men.html"><button id="backbtn">&#8592</button></a>
+        <img id="home" src="logo1.png" style="width:25%;margin-left: 35%;" />
+       <div id="topbtn">
+        <button id="flt1" class="filterbtn " >See 2</button>
+        <button id="flt2" class="filterbtn">Filter</button>
+       </div>
+    </div>
+    <!-- <button class="hl" id="slh1" onclick="slh()"></button>
+    <button class="hl" id="shl2" onclick="shl()"></button> -->
+      <!-- Change Me -->
+    <!-- <label id="cbtn">Cart<a href="trousersCart.html"><button  id="cbtn"><p class="tbt">&#128722</p><p id="btxt"></p></button></a></label> -->
+    <div id="products">
+    </div>
+    <div id="filterdiv">
+      <div id="filteropt">
+          <div id="filterhead">
+            <h4>Filter</h4>
+           <div id="filterHide">
+            <span>Hide Filter</span>
+            <button id="hidefilterbtn">&#10005</button>
+           </div>
+          </div>
+        <div>
+            <h4>Order by</h4>
+           <div id="filterByPriceDiv">
+            <button onclick="slh()">Priced From Low to High</button>
+            <button onclick="shl()">Priced From Low to High</button>
+           </div>
+         </div>
+         <div>
+             <h4>Colour</h4>
+            <div id="filterByColorDiv">
+               <div id="blackcolordiv">
+                <button id="blackSelect" style="background-color: black;"></button>
+                <p>Black</p>
+               </div>
+                <div id="bluecolordiv">
+                    <button id="blueSelect" style="background-color: blue"></button>
+                <p>Blues</p>
+                </div>
+            </div>
+           </div>
+         <div id="filterBySizeDivparent">
+          <h4>Sizes</h4>
+          <div id="filterBySizeDiv">
+              <button>X</button>
+              <button>L</button>
+              <button>M</button>
+              <button>S</button>
+          </div>
+         </div>
+         <div>
+            <h4 style="margin: auto;">Price Range</h4>
+            <input type="range" name="price range" id="priace range" >
+            <p id="showprice"></p>
+         </div>
+      </div>
     </div>
 </body>
 
 </html>
 <script>
-    list = [
+     list = [
         {
             img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8241/912/800/8241912800_4_1_8.jpg?t=1631545271097&imwidth=563",
             price: 10, name: " Black Kikkoman T-shirt", colour: "green",
@@ -129,63 +114,150 @@
                 { img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8201/501/711/8201501711_4_1_8.jpg?t=1626099395859&imwidth=563", name: "T-shirt with vertical stripes", price: 14, colour: "green", }, 
              { img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8241/528/500/8241528500_4_1_8.jpg?t=1626885715679&imwidth=563", name: "Plush T-shirt with panels", price: 16, colour: "gold", },
     ];
-    var Total = 0;
-    var out = "";
-    var parent = document.getElementById("main");
-    function showproducts(p) {
+    var total = 0;
+    var parent = document.getElementById("products");
+    function showproducts(arr) {
         parent.innerHTML = null;
-        list.forEach(function (products) {
-            var img = document.createElement("img");
-            var div = document.createElement("div");
+        list3.forEach(function (products) {
+            let divimg2 = document.createElement("div");
+            divimg2.setAttribute("id","divimg2")
+            let div = document.createElement("div");
+            div.setAttribute("id","imgdiv")
+            // let filterdiv=document.createElement("div")
+            // filterdiv.setAttribute("id","filterdiv")
+            var Al=products.a
+            var array=[]
+            array.push(products.a)
+           div.addEventListener("click",productpage)
+           function productpage(){
+            window.location.href=products.a
+           }
+            let img2=document.createElement("img")
+            img2.setAttribute("id","hoverimg")
+            img2.src=products.img2
+            let img = document.createElement("img");
             img.src = products.img;
-            var p1 = document.createElement("p");
-            p1.textContent = products.name;
-            p1.style.color = "#007200";
-            p1.style.textAlign = "center";
+            let product_price = document.createElement("p");
+            product_price.setAttribute("id","pprice")
+            product_price.textContent = "$" + products.price;
+            let product_name = document.createElement("p");
+            product_name.setAttribute("id","ptxt")
+            product_name.textContent = products.name;
+            total = total + products.price;
+
             let addtocart_btn = document.createElement("button");
+            addtocart_btn.setAttribute("id","cartbtn")
             addtocart_btn.innerText = "Add to Cart";
-            addtocart_btn.style.marginLeft = "35%";
-            addtocart_btn.onclick = function () {
-                addtoCart(products);
-            };
+            addtocart_btn.style.marginLeft = "20%";
+            div.append(img,img2)
+            divimg2.append(div,product_name,product_price);
+            parent.append(divimg2);
 
-            div1 = document.createElement("div");
-            div1.textContent = "myimage";
-            img.append(div1);
-            var p2 = document.createElement("p");
-            p2.textContent = "$" + products.price;
-            p2.style.textAlign = "center";
-            p2.style.color = "#ffb600";
-            div.append(img, p1, p2, addtocart_btn);
-            parent.append(div);
         });
-    }
-    showproducts();
-    if (localStorage.getItem("cart5") === null) {
-        localStorage.setItem("cart5", JSON.stringify([]));
-    };
 
+        var filterbtn=document.getElementById("flt2")
+    filterbtn.addEventListener("click",filterg)
+    var fildiv=document.getElementById("filterdiv")
+    var parentg= document.getElementById("products");
+    console.log(fildiv);
+    function filterg(){
+     fildiv.style.display="block"
+     fildiv.style.width="40%"
+     parentg.style.width="60%"
+     parentg.style.margin="0px";
+    //  parentg.style.backgroundColor="red"
+    //  fildiv.style.m="10px"
+    }
+    var hfd=document.getElementById("hidefilterbtn")
+    var parentgh= document.getElementById("products");
+    hfd.addEventListener("click",hidefilter)
+    function hidefilter(){
+        fildiv.style.display="none"
+        parentgh.style.width="100%"
+        parentg.style.gridTemplateColumns="20% 20% 20% 20%"
+    }
+    var parentg= document.getElementById("products");
+    var flt2=document.getElementById("flt1")
+    flt2.addEventListener("click",seeTwo)
+    var c=0;
+    function seeTwo(){
+        c++;
+        if(c%2!==0){
+            parentg.style.gridTemplateColumns="300px 300px"
+            flt2.textContent="See 4"
+        }
+        else if(c%2==0){
+            parentg.style.width="100%"
+            parentg.style.gridTemplateColumns="20% 20% 20% 20%"
+            flt2.innerText="See 2"
+        }
+    }
+    };
+    showproducts();
+    console.log(total);
+    if (localStorage.getItem("pullandbearProductCart") === null) {
+        localStorage.setItem("pullandbearProductCartnew", JSON.stringify([]));
+    };
+    var txt = document.getElementById("btxt")
     function addtoCart(p) {
-        products_cart = JSON.parse(localStorage.getItem("cart5"));
+        products_cart = JSON.parse(localStorage.getItem("pullandbearProductCart"));
         products_cart.push(p);
-        localStorage.setItem("cart5", JSON.stringify(products_cart));
-        console.log("product_cart:", products_cart);
+        txt.innerText="Items :"+products_cart.length
+               localStorage.setItem("pullandbearProductCart", JSON.stringify(products_cart));
     };
     function slh() {
-        var arr = list.sort(function (a, b) {
+        var arr = list3.sort(function (a, b) {
             return a.price - b.price;
         });
         showproducts(arr);
     }
     function shl() {
-        var arr = list.sort(function (a, b) {
+        var arr = list3.sort(function (a, b) {
             return b.price - a.price;
 
         });
         showproducts(arr);
     }
-    var find = document.getElementById("slh1");
-    find.innerHTML = "High to Low";
-    var find1 = document.getElementById("shl2");
-    find1.innerHTML = "Low to High";
+    console.log(list3);
+    var blackSelect=document.getElementById("blackSelect")
+     blackSelect.addEventListener("click",selBlack)
+    //  var black=list3.filter(function(el){
+    //      return el.value==5
+    //  })
+    //  console.log(black);
+    var k=0;
+    function selBlack(){
+        k++
+        var bl=list3.sort(function(a,b){
+        if(k%2!==0){
+            return (a.value-b.value);
+        }
+        else{
+            window.location.href="trousersProducts.html"
+        }
+        
+        })
+        console.log(bl);
+        showproducts(bl);
+    }
+    var b=0;
+    var blueSelect=document.getElementById("blueSelect")
+    blueSelect.addEventListener("click",selBlack)
+    function selBlue(){
+        b++;
+        var blu=list3.sort(function(a,b){
+            if(b%2==0){
+            return (b.value-a.value);
+        }else{
+            window.location.href="trousersProducts.html"
+        }
+        })
+        console.log(blu);
+        showproducts(blu);
+    }
+    var hm=document.getElementById("home")
+    hm.addEventListener("click",home)
+    function home(){
+        window.location.href="trousersProducts.html"
+    }
 </script>
