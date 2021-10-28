@@ -157,6 +157,10 @@ function showprodcts() {
         }
     }
 }
+var logoclick=document.getElementById("logodiv")
+logoclick.onclick=function(){
+    window.location.href="../HTML/4-MenOrWomen.html"
+}
 
     var upiselected=document.getElementById("upiselected")
     var imgapp=document.getElementById("finalpaydetail")
