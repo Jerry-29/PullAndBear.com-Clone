@@ -3,7 +3,7 @@ var list3 = [{
     price: 25,
     img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/519/800/8676519800_4_1_8.jpg?t=1632235002863&imwidth=563",
     a:"trouser1.html",
-    value:7,
+    val:7,
     img2:"https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/519/800/8676519800_2_8_8.jpg?t=1628690507138&imwidth=750",
 },
 {
@@ -11,69 +11,69 @@ var list3 = [{
     price: 35,
     img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/519/806/8676519806_4_1_8.jpg?t=1632238040653&imwidth=563",
     a:"trouser2.html",
-    value:5,  
+    val:5,  
 },
 {
     name: "Black-Faded standard fit jeans",
     price: 38,
     img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/519/712/8676519712_4_1_8.jpg?t=1632235002775&imwidth=563",
-    value:5,
+    val:5,
     a:"trouser3.html"
 },
 {
     name: "Black-Faded standard fit jeans",
     price: 40,
     img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/519/506/8676519506_4_1_8.jpg?t=1631722920155&imwidth=563",
-    value:5,
+    val:5,
     a:"trouser3.html"
 },
 {
     name: "Black-Premium fabric joggers with logo",
     price: 45,
     img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/533/712/8676533712_4_1_8.jpg?t=1632734710030&imwidth=563",
-    value:5,
+    val:5,
 },
 {
     name: "Black-Faded wide-leg jeans",
     price: 45,
     img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/527/700/8676527700_4_1_8.jpg?t=1632734701191&imwidth=563",
-    value:5,
+    val:5,
 },
 {
     name: "Navy blue joggers",
     img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/518/800/8676518800_4_1_8.jpg?t=1631549716380&imwidth=563",
     price: 45,
-    value:7,
+    val:7,
 },
 {
     name: "Black-Coloured carpenter jeans",
     price: 20,
     img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/526/800/8676526800_4_1_8.jpg?t=1630670909165&imwidth=563",
-    value:5,
+    val:5,
 },
 {
     name: "Navy blue Basic piqué joggers",
     price: 18,
     img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/503/809/8676503809_4_1_8.jpg?t=1631628505370&imwidth=563",
-    value:7,
+    val:7,
 },
 {
     name: "Navy blue joggers",
     price: 15,
     img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/518/827/8676518827_4_1_8.jpg?t=1631628449244&imwidth=563",
-    value:7,
+    val:7,
  },
 {
     name: "Navy blue joggers",
     img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/518/401/8676518401_4_1_8.jpg?t=1630001356272&imwidth=563",
     price: 26,
-    value:7,
+    val:7,
 },
 {
     name: "Black-Standard fit chino trousers",
     img: "https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/514/712/8676514712_4_1_8.jpg?t=1629463027114&imwidth=563",
     price: 16,
-    value:5,
+    val:5,
 }];
 var total = 0;
 var parent = document.getElementById("products");
@@ -105,6 +105,9 @@ function showproducts(arr) {
         product_name.setAttribute("id","ptxt")
         product_name.textContent = products.name;
         total = total + products.price;
+   
+      
+
 
         let addtocart_btn = document.createElement("button");
         addtocart_btn.setAttribute("id","cartbtn")
@@ -115,7 +118,7 @@ function showproducts(arr) {
         parent.append(divimg2);
 
     });
-
+   
     var filterbtn=document.getElementById("flt2")
 filterbtn.addEventListener("click",filterg)
 var fildiv=document.getElementById("filterdiv")
@@ -191,7 +194,7 @@ function selBlack(){
     k++
     var bl=list3.sort(function(a,b){
     if(k%2!==0){
-        return (a.value-b.value);
+        return (a.val-b.val);
     }
     else{
         window.location.href="../HTML/trousersProducts.html"
@@ -208,7 +211,7 @@ function selBlue(){
     b++;
     var blu=list3.sort(function(a,b){
         if(b%2==0){
-        return (b.value-a.value);
+        return (b.val-a.val);
     }else{
         window.location.href="../HTML/trousersProducts.html"
     }
