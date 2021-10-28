@@ -16,7 +16,7 @@
   
 <h2>Project Statements</h2>
 <p>
-    We are  team of four members working on this project. i.e
+    We are  team of four members working on this project.<br>
 1- Avdhesh Pal.
 
 2- Govind Singh.
