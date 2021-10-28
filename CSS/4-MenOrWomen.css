@@ -1,0 +1,28 @@
+*{
+    font-family: Graphik Cond Web, Graphik, sans-serif;
+}
+#full_img{
+    background: url("https://static.pullandbear.net/2/static2/itxwebstandard/responsive/genderselector/man.jpg?20210929024001") right top no-repeat, url("https://static.pullandbear.net/2/static2/itxwebstandard/responsive/genderselector/woman.jpg?20210929024001") left top repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    border: 1px solid white;
+}
+#full_img > a> h1{
+    margin: 25%;
+    font-size: 50px;
+    color: white;
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+    display: inline-block;
+}
+#full_img > a> h2{
+    margin:5% 20% 25% 20%;
+    font-size: 50px;
+    color: white;
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+    display: inline-block;
+    
+}

@@ -1,0 +1,73 @@
+body {
+    background-image: url("https://static.pullandbear.net/2/static2/itxwebstandard/images/home/2021-09/24/1400/Newin_man.jpg?v=20210929162516");
+    background-size: cover;
+}
+
+* {
+    font-family: Graphik Cond Web, Graphik, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 15px;
+    /* color:beige; */
+}
+
+#signupbox {
+    width: 30%;
+    height: 65%;
+    background-color: #F5F5F5;
+    /* margin:0% 2% 10% 48%;   */
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    border: 1 px solid salmon;
+
+}
+
+input {
+    margin: 4%;
+    height: 30px;
+    border: none;
+
+}
+
+#register {
+    height: 40px;
+    margin: 5%;
+    border: none;
+    background-color: #263238;
+    color: white;
+    font-size: 16px;
+    /* font-weight: bold; */
+}
+
+button {
+    margin-bottom: 15px;
+
+}
+
+#back {
+    /* margin: 2%; */
+    color: brown;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+
+.page {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.test {
+
+    margin-right: 8%;
+    margin-top: 2%;
+
+
+}
