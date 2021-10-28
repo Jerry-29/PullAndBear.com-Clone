@@ -33,7 +33,7 @@ And govind made product discription page , On description page you can select co
     Our team has only 4 members, so we split every work with us. I take care of designing the navbar of all pages and designed the menorwomen page, men, women, and payment page of the pullandbear. And my teammate shivam made sign in and signup pages and subham made product pages and govind made product discription pages and cart page of the website.
 
 </p>
-<h2>Our Team</h2>
+<h2>Our Team with github link</h2>
 <ul>
     <li><a href="https://github.com/AvdheshPal/">Avdhesh Pal</a></li>
     <li><a href="https://github.com/Govindsingh29">Govind Singh</a></li>
