@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pull&Bear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         *{
             font-family: Graphik Cond Web, Graphik, sans-serif;
@@ -35,29 +36,63 @@
             border: 1px solid black;
             padding: 8px 13px;
             display: inline-block;
-            margin-top: -30%;
+            margin-top: 5%;
             margin-left: 47%;
-           
-           
-           
        }
        button:hover{
            background-color: black;
            color: white;
+       }
+       #git{
+          cursor: pointer;
        }
     </style>
 </head>
 <body>
 
   <div id="container">
-    <h1>Thank You for Shopping with Us</h1>
+    <h1 id="nam"></h1>
     <h3>Your Product will be dispatch soon !</h3>
-    <h6>&#128522</h6>
+    <!-- <h6>&#128522</h6> -->
     <a href="4-MenOrWomen.html"><button id="home">Go Home</button></a>
     <hr>
     <br>
     <h4>For any query ! Visit at www.demopullAndBear.com</h4>
     <h4>For Quick response - Use our Toll Free No. 1002 0022 2233 </h4>
+    <hr>
+    <h4>Created by Team No.25</h4>
+    <h4 id="mem"></h4>
+    <br>
+    <h4 id="git"><i class="fa fa-github" style="font-size:46px"></i></h4>
   </div>
 </body>
 </html>
+<script>
+    var nam=document.getElementById("nam")
+    var userName=JSON.parse(localStorage.getItem("users"))
+    console.log(userName);
+    var uname=userName[userName.length-1].name
+    uname=uname.trim().split(" ")
+    Uname=uname[0]
+    if(userName!=null){
+     nam.innerHTML="Thankyou "+Uname+" for Shopping with Us"
+    }
+    var Team=["Govind Singh ","Shivam Singh ","Avadesh Pal ","Subhaam Tamawar "]
+   var tm= document.getElementById("mem")
+   tm.innerHTML
+   tm.innerHTML="Team Members ~ "+ shuffleMem(Team);
+   function shuffleMem(Team) {
+    for (var i = Team.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = Team[i];
+        Team[i] = Team[j];
+        Team[j] = temp;
+    }
+    return Team
+    var git=document.getElementById("git")
+    git.onclick=function(){
+        window.location.href=""
+    }
+}
+   
+</script>
