@@ -27,13 +27,11 @@
     
 we split our task between four of us. Shivam designed the landing page along with signIn ans signUp function with all mandatory and necessary authentication for visiting   the Pull&Bear website,
 Avdhesh has completed the navbar for all pages and designed the Men & Women section of the website along with payment page authentication.
-Shubham worked on product category inside Men/women section with all available products of that category. In addition to this ,he has added filter function.
-And govind made product discription page , On description page you can select color and sizes according to your requirement. Addition to this he worked on Cart page where you can modify your quantity of items.
-    
-    Our team has only 4 members, so we split every work with us. I take care of designing the navbar of all pages and designed the menorwomen page, men, women, and payment page of the pullandbear. And my teammate shivam made sign in and signup pages and subham made product pages and govind made product discription pages and cart page of the website.
+Shubham worked on product category inside Men/women section with all available products of that category. In addition to this ,he has added some sorting function.
+And govind made product discription page , On description page you can select color and sizes according to your requirement. Addition to this he worked on Cart page where you can modify your quantity of items.  
 
 </p>
-<h2>Our Team with github link</h2>
+<h2>Our Team</h2>
 <ul>
     <li><a href="https://github.com/AvdheshPal/">Avdhesh Pal</a></li>
     <li><a href="https://github.com/Govindsingh29">Govind Singh</a></li>
