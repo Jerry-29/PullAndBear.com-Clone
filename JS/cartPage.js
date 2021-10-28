@@ -153,7 +153,7 @@ function showprodcts() {
                 alert("Invalid details")
             }
             else{
-                window.location.href="../HTML/paymentGatway.html"
+                window.location.href="../HTML/paymentGateway.html"
         }
     }
 }
@@ -178,7 +178,7 @@ function showprodcts() {
        if(inp1.value=="" ||inp1.value.length<4){
            alert("Invalid Input")
        }else{
-           window.location.href="../HTML/paymentGatway.html"
+           window.location.href="../HTML/paymentGateway.html"
        }
         }
     }
@@ -299,7 +299,7 @@ function showprodcts() {
                 alert("Incorrect Date")
             }  
             if(flag==true){
-                window.location.href="../HTML/paymentGatway.html"
+                window.location.href="../HTML/paymentGateway.html"
             }
         }
 
