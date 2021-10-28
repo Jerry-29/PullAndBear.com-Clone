@@ -165,7 +165,7 @@ function showprodcts() {
         paydetail.style.visibility="visible"
         payOption.style.visibility="hidden"
         headpay.innerText="Enter UPI Your Id or Scan QR Code"
-        inp1.setAttribute("placeholder","Enter Your UPI ID ")
+        inp1.setAttribute("placeholder","Enter Your UPI ID abc@ybl")
         inp1.setAttribute("type","text")
         inp2.style.display="none"
         inp3.style.display="none"
@@ -185,7 +185,7 @@ function showprodcts() {
 
     var Cod=document.getElementById("codselected")
     Cod.onclick=function(){
-        window.location.href="10-payment.html"
+        window.location.href="11-thankyou.html"
         // change Me To Thanks for Shopping
     }
     var arr=["Sunday","Monday","TuesDay","Wednesday","Thrusday","Friday","Saturday"]
