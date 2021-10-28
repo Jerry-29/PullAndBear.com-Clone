@@ -137,6 +137,7 @@
           z-index:1;
            text-align: center;
           justify-content: center;
+          cursor: pointer;
         }
         /* #headlogo{
             margin-left: 140px;
@@ -163,6 +164,7 @@
            right: 150%;
             position: relative;
             z-index: 100;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -434,35 +436,33 @@ if(localStorage.getItem("pullandbearProductCart")===null){
 // let orderAddmsg=document.getElementById("orderAdded")
 var cartTxt=document.getElementById("cartItemNumber")
 let RetriveData=JSON.parse(localStorage.getItem("pullandbearProductCart"))
-cartTxt.innerText=RetriveData.length 
+// cartTxt.innerText=RetriveData.length 
 window.addEventListener("load",load)
 function load(){
-    cartTxt.innerText=RetriveData.length 
+    if(RetriveData.length>0){
+        cartTxt.innerText=RetriveData.length 
+    }else{
+        cartTxt.innerText=""
+    }
+   
 }
 var main=document.getElementById("main")
 function ADD(element){
     
     RetriveData.push(element)
     // count++;
- 
-  let cartopt=document.getElementById("addcart")
-//  let ak=document.getElementById("anchor")
-// ak.append(cartopt)
-//  cartopt.addEventListener("click",cartmsg)
-// function cartmsg(){
-//     var cartTxt=document.getElementById("adtxt")
-//     if(cartTxt.innerText===""){
-//         alert("Your Cart is Empty")
-//     }
-//     else{
-//       ak.setAttribute("href","trouserMainCart.html")
-//     }
-// }
-
    localStorage.setItem("pullandbearProductCart",JSON.stringify(RetriveData));
 
 }
-
+var cartTxtn=document.getElementById("cartItemNumber")
+var cartBody=document.getElementById("notxt")
+ cartBody.onclick=function(){
+    if(RetriveData.length==0){
+        alert("Cart is Empty")
+    }else{
+        window.location.href="cartPage.html"
+    }
+ }
     </script>
 </body>
 </html>
