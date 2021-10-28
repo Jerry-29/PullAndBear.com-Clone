@@ -28,11 +28,11 @@ function showprodcts() {
         Addmore.setAttribute("id","addmore")
         Addmore.onclick=function(){
             pushInCart(index)
-            window.location.href="cartPage.html"
+            window.location.href="../HTML/cartPage.html"
         }
         remButton.addEventListener("click", function () {
             deletItem(index);
-            window.location.href = "cartPage.html";
+            window.location.href = "../HTML/cartPage.html";
         });
         var div2 = document.createElement("div");
         div2.setAttribute("id", "div2");
@@ -97,7 +97,7 @@ function showprodcts() {
         if(PWCart.length==0){
             alert("Your Cart is empty")
             // Donot Change Me
-            window.location.href="cartPage.html"
+            window.location.href="../HTML/MenOrWomen.html"
         }
        else{ add.style.visibility = "visible";
         homeclickdiv.style.visibility = "hidden";
@@ -118,7 +118,7 @@ function showprodcts() {
         if(PWCart.length==0){
             alert("Your Cart is empty")
             // Donot Change Me
-            window.location.href="cartPage.html"
+            window.location.href="../HTML/cartPage.html"
         }else{
             hub.style.visibility="hidden"
             show.style.visibility = "visible";
@@ -153,7 +153,7 @@ function showprodcts() {
                 alert("Invalid details")
             }
             else{
-                window.location.href="paymentGatway.html"
+                window.location.href="../HTML/paymentGatway.html"
         }
     }
 }
@@ -170,7 +170,7 @@ function showprodcts() {
         inp2.style.display="none"
         inp3.style.display="none"
         inp4.style.display="none"
-        img.src="upilogop.jpg"
+        img.src="../Images/upilogop.jpg"
         img.style.width="20%"
         imgapp.append(img)
         var fclick=document.getElementById("finalAmount")
@@ -178,14 +178,14 @@ function showprodcts() {
        if(inp1.value=="" ||inp1.value.length<4){
            alert("Invalid Input")
        }else{
-           window.location.href="paymentGateway.html"
+           window.location.href="../HTML/paymentGatway.html"
        }
         }
     }
 
     var Cod=document.getElementById("codselected")
     Cod.onclick=function(){
-        window.location.href="11-thankyou.html"
+        window.location.href="../HTML/11-thankyou.html"
         // change Me To Thanks for Shopping
     }
     var arr=["Sunday","Monday","TuesDay","Wednesday","Thrusday","Friday","Saturday"]
@@ -299,7 +299,7 @@ function showprodcts() {
                 alert("Incorrect Date")
             }  
             if(flag==true){
-                window.location.href="paymentGateway.html"
+                window.location.href="../HTML/paymentGatway.html"
             }
         }
 

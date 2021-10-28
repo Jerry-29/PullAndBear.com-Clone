@@ -20,7 +20,7 @@ function signin(e) {
         if (email === user.email && password === user.password) {
             //alert ("Logged in successfully")
 
-            window.location.href = "4-MenOrWomen.html";
+            window.location.href = "../HTML/4-MenOrWomen.html";
             count++;
         }
 

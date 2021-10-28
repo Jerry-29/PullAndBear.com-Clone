@@ -1,5 +1,5 @@
 setTimeout(function(){
-    window.location.href = '11-thankyou.html';
+    window.location.href = '../HTML/11-thankyou.html';
  }, 3000);
  var timeleft = 0;
 var downloadTimer = setInterval(function(){

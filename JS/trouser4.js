@@ -84,7 +84,7 @@ addingInCart.onclick=function(){
         ADD(element);
         addingInCart.style.background="green"
         addingInCart.innerText="Product Added in Cart"
-        window.location.href="trouser4.html"
+        window.location.href="../HTML/trouser4.html"
         //Dont Change me
     }
     
@@ -170,7 +170,7 @@ var cartBody=document.getElementById("notxt")
     if(RetriveData.length==0){
         alert("Cart is Empty")
     }else{
-        window.location.href="cartPage.html"
+        window.location.href="../HTML/cartPage.html"
     }
  }
  var id=Math.floor(Math.random()*1291738)

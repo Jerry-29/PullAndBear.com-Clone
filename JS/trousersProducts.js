@@ -194,7 +194,7 @@ function selBlack(){
         return (a.value-b.value);
     }
     else{
-        window.location.href="trousersProducts.html"
+        window.location.href="../HTML/trousersProducts.html"
     }
     
     })
@@ -210,7 +210,7 @@ function selBlue(){
         if(b%2==0){
         return (b.value-a.value);
     }else{
-        window.location.href="trousersProducts.html"
+        window.location.href="../HTML/trousersProducts.html"
     }
     })
     console.log(blu);
@@ -219,5 +219,5 @@ function selBlue(){
 var hm=document.getElementById("home")
 hm.addEventListener("click",home)
 function home(){
-    window.location.href="trousersProducts.html"
+    window.location.href="../HTML/trousersProducts.html"
 }
