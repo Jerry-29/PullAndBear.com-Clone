@@ -1,0 +1,160 @@
+*{
+    /* border: solid black;
+    border-radius: 1px; */
+    margin:1%;
+    font-family: Graphik Cond Web, Graphik, sans-serif;
+}
+#head{
+    display: grid;
+    grid-template-columns: 8% 25% 30%;
+    gap: 15%;
+}
+#containerImg{
+    width: 100%;
+    display: flex;
+    margin-top: -15px;
+}
+#beforeAddingCartImages{
+    display: grid;
+    grid-template-columns: 49% 49%;
+   row-gap: .5%;
+   column-gap: 2%;
+    width: 70%;
+    grid-template-rows: auto;
+    
+}
+img{
+    width: 100%;
+}
+#textAndLikebutton{
+    display: flex;
+   
+}
+#likebutttonDiv{
+    margin-top: 5px;
+    margin-left: 50px;
+   
+}
+#Pdetailcontainer{
+    margin: 2%;
+}
+#selectcolorbutton{
+background-position: center;
+     width: 6%;
+     height: 20px;
+     border: none;
+}
+#selectcolorbutton2{
+    background-position: center;
+     width: 6%;
+     height: 20px;
+     border: none;
+}
+.scbt{
+    background-position: center;
+     width: 6%;
+     height: 20px;
+     border: none;
+}
+#addtoshopbag{
+    background-color: black;
+    color: white;
+   height: 40px;
+   width: 100%;
+}
+#searchsigncart{
+    width: 10%;
+    margin-top: -1%;
+    font-size: 160%;
+    justify-self: flex-end;
+    
+} 
+#C {
+  width: 100%;
+ font-size: 100%;
+ height: 30px;
+  text-align:justify;
+  border-style: groove;
+  background-color: rgba(255, 255, 255, 0.664);
+}
+ /* #navbtn{
+width: 18px;
+height: 18px;
+text-align: center;
+
+}  */
+
+#likedbutton{
+    border-radius: 6px;
+}
+#sizeinst{
+    color: black;
+}
+#BOTTOM{
+    display: flex;
+}
+#BOTTOM h4 p{
+margin-right: 30px;
+margin-left: 40px;
+}
+#discovermoretxt{
+    text-align: center;
+}
+#Sizecheck{
+    width: 200px;
+}
+#adtxt{
+    font-size: 20px;
+    font-weight: bolder;
+}
+#addcart{
+    width: 80px;
+    background: none;
+    border: none;
+    margin-top: -10px;
+    margin-left: 230px;
+}
+#wishlistbutton{
+    font-size: 15px;
+    background: none;
+    border: none;
+}
+#Pdetailcontainer{
+    margin-top: 0px;
+}
+#notxt{
+   width: 100%;
+   display: flex;
+  position: relative;
+  z-index:1;
+   text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* #headlogo{
+    margin-left: 140px;
+    margin-top: -40px;
+} */
+/* #navbtn{
+    width: 40px;
+     border-radius: 15px;
+      height: 30px;
+     background: none;
+     margin-top: -15px;
+     margin-left: -15px;
+} */
+/* #notxt{
+    width: 10%;
+    background-color: blue;
+    margin-top:-10%;
+    height: 80%;
+} */
+#cartItemNumber{
+    font-size: 16px;
+    width: 20px;
+    margin-top: 32%;
+   right: 150%;
+    position: relative;
+    z-index: 100;
+    font-weight: 600;
+}
