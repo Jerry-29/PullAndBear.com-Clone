@@ -247,7 +247,7 @@
                 </button>
             </div>
             <div>
-                <h4>REF 8681507</h4>
+                <h4 id="refid">REF 8681507</h4>
                 <p>Light blue slim comfort fit jeans with a five-<br>pocket design, belt loops, and zip fly and top<br>button fastening. Made of cotton.</p>
             </div>
             <div id="infomore">
@@ -463,6 +463,10 @@ var cartBody=document.getElementById("notxt")
         window.location.href="cartPage.html"
     }
  }
+ var id=Math.floor(Math.random()*1291738)
+ var refid=document.getElementById("refid")
+ refid.innerHTML="Ref "+ id
+
     </script>
 </body>
 </html>
