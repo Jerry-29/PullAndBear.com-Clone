@@ -18,7 +18,7 @@ body{
     display: grid;
     width: 100%;
     grid-template-columns: 20% 20% 20% 20%;
-    grid-gap: 5%;
+    grid-gap: 2%;
     margin: auto;
     margin-top: 1%;
     justify-content: center;

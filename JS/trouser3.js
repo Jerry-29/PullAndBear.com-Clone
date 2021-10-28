@@ -67,6 +67,10 @@ sizebt.onclick=function(){
     }
 } 
   
+var back=document.getElementById("goback")
+back.onclick=function(){
+    window.location.href="../HTML/trousersProducts.html"
+}
   
 // let addwishlist=document.getElementById("wishlistbutton")
 // addwishlist.onclick=function(){

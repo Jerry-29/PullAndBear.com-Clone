@@ -89,6 +89,10 @@ addingInCart.onclick=function(){
     }
     
 }
+var back=document.getElementById("goback")
+back.onclick=function(){
+    window.location.href="../HTML/trousersProducts.html"
+}
 
      let click=0;
 let wish=document.getElementById("wishlistbutton")
