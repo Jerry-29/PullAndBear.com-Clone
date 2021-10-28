@@ -97,7 +97,7 @@ function showprodcts() {
         if(PWCart.length==0){
             alert("Your Cart is empty")
             // Donot Change Me
-            window.location.href="../HTML/MenOrWomen.html"
+            window.location.href="../HTML/4-MenOrWomen.html"
         }
        else{ add.style.visibility = "visible";
         homeclickdiv.style.visibility = "hidden";
@@ -117,8 +117,8 @@ function showprodcts() {
     hubclicked.onclick = function () {
         if(PWCart.length==0){
             alert("Your Cart is empty")
+            window.location.href="../HTML/4-MenOrWomen.html"
             // Donot Change Me
-            window.location.href="../HTML/cartPage.html"
         }else{
             hub.style.visibility="hidden"
             show.style.visibility = "visible";
