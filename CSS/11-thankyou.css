@@ -29,6 +29,7 @@ button{
     display: inline-block;
     margin-top: 5%;
     margin-left: 47%;
+    cursor: pointer;
 }
 button:hover{
    background-color: black;
