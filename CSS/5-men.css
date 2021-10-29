@@ -135,6 +135,9 @@ body{
     margin-left: 2%;
 }
 
+* {
+    font-family: Graphik Cond Web, Graphik, sans-serif;
+}
 #n1>a {
     font-size: larger;
     text-decoration: none;
@@ -144,6 +147,7 @@ body{
 
 #n2 {
     display: flex;
+    cursor: pointer;
 }
 #search{
     margin-top: 1%;

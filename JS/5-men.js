@@ -1,3 +1,15 @@
+
+var itemInCart=document.getElementById("noItemInCart")
+itemInCart.onclick=function(){
+    var cart= JSON.parse(localStorage.getItem("pullandbearProductCart"));
+    if(cart.length==0){
+        alert("Cart is Empty")
+    }
+    else{
+        window.location.href="../HTML/cartPage.html"
+    }
+}
+
 let new_in = document.getElementById("full_img")
 new_in.addEventListener("click", newpage)
 

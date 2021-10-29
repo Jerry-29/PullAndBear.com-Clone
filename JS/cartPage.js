@@ -62,6 +62,11 @@ function showprodcts() {
     //   }
     //   localStorage.setItem("pullandbearProductCart",JSON.stringify(PWCart))
     // }
+    var homback=document.getElementById("backhomebutton")
+    homback.onclick=function(){
+        window.location.href="../HTML/4-MenOrWomen.html"
+    }
+  
      function pushInCart(index){
          PWCart.push(PWCart[index])
          localStorage.setItem("pullandbearProductCart",JSON.stringify(PWCart))
@@ -114,8 +119,10 @@ function showprodcts() {
     // var p2 = document.getElementById("P2");
     // var p3 = document.getElementById("p3");
     // var p4 = document.getElementById("p4");
+    var bk=document.getElementById("backhom")
     hubclicked.onclick = function () {
         if(PWCart.length==0){
+            bk.style.display="block"
             alert("Your Cart is empty")
             window.location.href="../HTML/4-MenOrWomen.html"
             // Donot Change Me
@@ -126,6 +133,7 @@ function showprodcts() {
             homeclickdiv.style.visibility = "visible";
             hom1.style.border="1px solid grey"
             hom2.style.border="hidden"
+           
         }
       
        // homeclickdiv.style.visibility = "visible";
@@ -321,6 +329,8 @@ logoclick.onclick=function(){
         stordiv.style.visibility="hidden"
         hom1.style.visibility="hidden"
     }
+    
    
 }
 showprodcts();
+
