@@ -11,6 +11,11 @@ var data=[{
     ProductImage6:"https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/519/800/8676519800_2_8_8.jpg?t=1628690507138&imwidth=750",
 }, 
 ];
+
+var logoclick=document.getElementById("logoclick")
+logoclick.onclick=function(){
+    window.location.href="../HTML/4-MenOrWomen.html"
+}
 function showprodcts(){
 data.forEach(function(element){
 let name=document.getElementById("productname")
@@ -46,6 +51,9 @@ csbt.onclick=function(){
         cmsg.style.color="red"
     }
 } 
+
+
+
 // products Size
 let smsg=document.getElementById("smsg")
 let sizebt=document.getElementById("sizeselection")

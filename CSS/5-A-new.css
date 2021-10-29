@@ -52,14 +52,14 @@ img {
     background-color: black;
 }
 
-button {
+/* button {
     border-radius: 10px;
     background: transparent;
     border: 1px solid black;
     padding: 8px 13px;
     display: inline-block;
 
-}
+} */
  #main button:hover {
     background-color: black;
     color: white;
@@ -67,7 +67,10 @@ button {
 #backbtn{
     position: relative;
     z-index: 10;
-    bottom: 60px; 
-    width: 35px;
+    bottom: 70px; 
+    width: 30px;
     cursor: pointer;
 }
+#logoclick{
+    cursor: pointer;
+ }

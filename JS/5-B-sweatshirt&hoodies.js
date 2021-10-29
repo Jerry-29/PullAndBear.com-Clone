@@ -79,6 +79,10 @@ showproducts();
 if (localStorage.getItem("cart5")===null) {
 localStorage.setItem("cart5",JSON.stringify([]));
 };
+var logoclick=document.getElementById("logoclick")
+logoclick.onclick=function(){
+    window.location.href="../HTML/4-MenOrWomen.html"
+}
 
 var red=document.getElementById("main")
 red.onclick=function(){

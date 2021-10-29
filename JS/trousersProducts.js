@@ -170,6 +170,8 @@ console.log(total);
 if (localStorage.getItem("pullandbearProductCart") === null) {
     localStorage.setItem("pullandbearProductCart", JSON.stringify([]));
 };
+
+
 var txt = document.getElementById("btxt")
 function addtoCart(p) {
     products_cart = JSON.parse(localStorage.getItem("pullandbearProductCart"));
@@ -227,8 +229,7 @@ function selBlue(){
     console.log(blu);
     showproducts(blu);
 }
-var hm=document.getElementById("home")
-hm.addEventListener("click",home)
-function home(){
-    window.location.href="../HTML/trousersProducts.html"
+var homback=document.getElementById("home")
+homback.onclick=function(){
+    window.location.href="../HTML/4-MenOrWomen.html"
 }

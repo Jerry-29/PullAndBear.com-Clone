@@ -66,6 +66,11 @@ sizebt.onclick=function(){
         smsg.style.border="2px"
     }
 } 
+
+var logoclick=document.getElementById("logoclick")
+logoclick.onclick=function(){
+    window.location.href="../HTML/4-MenOrWomen.html"
+}
   
 var back=document.getElementById("goback")
 back.onclick=function(){

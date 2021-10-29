@@ -71,6 +71,11 @@ var back=document.getElementById("goback")
 back.onclick=function(){
     window.location.href="../HTML/trousersProducts.html"
 }
+
+var logoclick=document.getElementById("logoclick")
+logoclick.onclick=function(){
+    window.location.href="../HTML/4-MenOrWomen.html"
+}
   
 // let addwishlist=document.getElementById("wishlistbutton")
 // addwishlist.onclick=function(){
