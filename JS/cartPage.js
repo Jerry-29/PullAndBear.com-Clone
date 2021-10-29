@@ -10,7 +10,7 @@ function showprodcts() {
         Pimg.src = element.ProductImage1;
         let Pprice = document.createElement("p");
         Pprice.setAttribute("class", "pelement");
-        Pprice.innerText = "Price : $" + element.ProductPrice;
+        Pprice.innerText = "Price : $ " + element.ProductPrice;
         let Psize = document.createElement("p");
         Psize.setAttribute("class", "pelement");
         Psize.innerText = "Size :" + element.ProductSize;
