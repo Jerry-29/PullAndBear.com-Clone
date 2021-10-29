@@ -50,7 +50,7 @@ function showproducts(p) {
         img.src = products.img;
         var p1 = document.createElement("p");
         p1.textContent = products.name;
-        p1.style.color = "#007200";
+        // p1.style.color = "#007200";
         p1.style.textAlign = "center";
         let addtocart_btn = document.createElement("button");
         addtocart_btn.innerText = "Add to Cart";
@@ -59,14 +59,14 @@ function showproducts(p) {
             addtoCart(products);
         };
 
-        div1 = document.createElement("div");
+        var div1 = document.createElement("div");
         div1.textContent = "myimage";
         img.append(div1);
         var p2 = document.createElement("p");
         p2.textContent = "$" + products.price;
         p2.style.textAlign = "center";
-        p2.style.color = "#ffb600";
-        div.append(img, p1, p2, addtocart_btn);
+        // p2.style.color = "#ffb600";
+        div.append(img, p1, p2);
         parent.append(div);
     });
 }
@@ -74,6 +74,15 @@ showproducts();
 if (localStorage.getItem("cart5") === null) {
     localStorage.setItem("cart5", JSON.stringify([]));
 };
+var red=document.getElementById("main")
+red.onclick=function(){
+    alert("Visit Trouser Section .This Page is Dummy")
+}
+var backg=document.getElementById("backbtn")
+backg.onclick=function(){
+    window.location.href="../HTML/5-men.html"
+}
+showproducts(p)
 
 function addtoCart(p) {
     products_cart = JSON.parse(localStorage.getItem("cart5"));
@@ -98,3 +107,4 @@ var find = document.getElementById("slh1");
 find.innerHTML = "High to Low";
 var find1 = document.getElementById("shl2");
 find1.innerHTML = "Low to High";
+

@@ -1,4 +1,4 @@
-var parent=document.getElementById("products");
+var parent=document.getElementById("main");
    
     
 var list2=[{name:"Parka with nylon details",
@@ -61,9 +61,7 @@ let product_price=document.createElement("p");
 product_price.textContent="$"+product.price;
 let product_name=document.createElement("p");
 product_name.textContent=product.name;
-product_name.style.color="blue";
 product_name.style.textAlign="center";
-product_price.style.color="#fb5607";
 product_price.style.textAlign="center";
 let addtocart_btn=document.createElement("button");
 addtocart_btn.innerText="Add to Cart";
@@ -72,7 +70,7 @@ addtocart_btn.onclick= function() {
     
    addtoCart(products);
 };
-div.append(img,product_name,product_price,addtocart_btn);
+div.append(img,product_name,product_price);
 parent.append(div);
 });
 }
@@ -80,6 +78,14 @@ showproducts();
 if (localStorage.getItem("cart5")===null) {
 localStorage.setItem("cart5",JSON.stringify([]));
 };
+var red=document.getElementById("main")
+red.onclick=function(){
+    alert("Visit Trouser Section .This Page is Dummy")
+}
+var backg=document.getElementById("backbtn")
+backg.onclick=function(){
+    window.location.href="../HTML/5-men.html"
+}
 
 
 function addtoCart(p) {

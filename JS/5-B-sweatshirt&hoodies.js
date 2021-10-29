@@ -60,9 +60,7 @@ let product_price=document.createElement("p");
 product_price.textContent="$"+products.price;
 let product_name=document.createElement("p");
 product_name.textContent=products.name;
-product_name.style.color="blue";
 product_name.style.textAlign="center";
-product_price.style.color="#fb5607";
 product_price.style.textAlign="center";
 let addtocart_btn=document.createElement("button");
 addtocart_btn.innerText="Add to Cart";
@@ -71,7 +69,7 @@ addtocart_btn.onclick= function() {
     
    addtoCart(products);
 };
-div.append(img,product_name,product_price, addtocart_btn);
+div.append(img,product_name,product_price);
 parent.append(div);
 
 });
