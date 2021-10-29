@@ -108,7 +108,7 @@ function showproducts(arr) {
         img.src = products.img;
         let product_price = document.createElement("p");
         product_price.setAttribute("id","pprice")
-        product_price.textContent = "$" + products.price;
+        product_price.textContent = "$ " + products.price;
         let product_name = document.createElement("p");
         product_name.setAttribute("id","ptxt")
         product_name.textContent = products.name;

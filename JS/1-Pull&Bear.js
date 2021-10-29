@@ -7,6 +7,6 @@ function check(){
 if(c.value==="0" ||l.value==="0"|| p.value==="0"){
    alert("select valid input")
 }else{
-    bt.href="2-signin.html"
+    bt.href="../HTML/2-signin.html"
 }
 }

@@ -86,10 +86,10 @@ function showprodcts() {
         for (let i = 0; i < PWCart.length; i++) {
             sum += Number(PWCart[i].ProductPrice)
         }
-        total.innerText = "Toal Cart Value : $" + sum;
+        total.innerText = "Toal Cart Value : $ " + sum;
         console.log(sum);
         var tPay=document.getElementById("finalAmount")
-        tPay.innerHTML="Pay $"+sum
+        tPay.innerHTML="Pay $ "+sum
         if(sum==0){
             var bk=document.getElementById("backhomebutton")
             bk.style.display="block"
