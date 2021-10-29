@@ -90,6 +90,10 @@ function showprodcts() {
         console.log(sum);
         var tPay=document.getElementById("finalAmount")
         tPay.innerHTML="Pay $"+sum
+        if(sum==0){
+            var bk=document.getElementById("backhomebutton")
+            bk.style.display="block"
+        }
     }
     sum();
     
@@ -119,13 +123,15 @@ function showprodcts() {
     // var p2 = document.getElementById("P2");
     // var p3 = document.getElementById("p3");
     // var p4 = document.getElementById("p4");
-    var bk=document.getElementById("backhom")
+    
     hubclicked.onclick = function () {
         if(PWCart.length==0){
-            bk.style.display="block"
+            
             alert("Your Cart is empty")
+           
             window.location.href="../HTML/4-MenOrWomen.html"
             // Donot Change Me
+            
         }else{
             hub.style.visibility="hidden"
             show.style.visibility = "visible";
