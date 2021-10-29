@@ -48,7 +48,7 @@ colour:"green",
 img:"https://static.pullandbear.net/2/photos//2021/I/0/2/p/8591/501/710/8591501710_4_1_8.jpg?t=1632734665638&imwidth=563",
 price:30,},
 ];
-var parent=document.getElementById("products");
+var parent=document.getElementById("main");
 function showproducts(arr) {
 parent.innerHTML=null;
 list1.forEach (function (products){
@@ -79,6 +79,15 @@ showproducts();
 if (localStorage.getItem("cart5")===null) {
 localStorage.setItem("cart5",JSON.stringify([]));
 };
+
+var red=document.getElementById("main")
+red.onclick=function(){
+    alert("Visit Trouser Section .This Page is Dummy")
+}
+var backg=document.getElementById("backbtn")
+backg.onclick=function(){
+    window.location.href="../HTML/5-men.html"
+}
 
 function addtoCart(p) {
 products_cart=JSON.parse(localStorage.getItem("cart5"));
