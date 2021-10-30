@@ -43,7 +43,7 @@ let denim_collection = document.querySelector("#full_img2")
 denim_collection.addEventListener("click", denimpage)
 
 function denimpage() {
-    alert("denim page")
+    alert("Visit Trouser Category")
 }
 var n1txt=document.getElementById("men1")
 var n2txt=document.getElementById("women1")
@@ -77,17 +77,17 @@ var shoesclick=document.getElementById("shoesclick")
 var accessoriesclick=document.getElementById("accessoriesclick")
 var joinLife=document.getElementById("joinLife")
 Newclick.onclick=function(){
-    alert("Welcome to New Arrival Page")
+    alert("Visit Clothing Catgeory")
 }
 Clothingclick.onclick=function(){
     window.location.href="../HTML/5-men.html"
 }
 shoesclick.onclick=function(){
-    alert("Welcome to New Arrival")
+    alert("Visit Clothing Catgeory")
 }
 accessoriesclick.onclick=function(){
-    alert("Welcome to Accessiories Page")
+    alert("Visit Clothing Catgeory")
 }
 joinLife.onclick=function(){
-    alert("Welcome to  Join Life Page")
+    alert("Visit Clothing Catgeory")
 }

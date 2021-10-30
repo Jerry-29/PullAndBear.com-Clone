@@ -26,28 +26,35 @@ var secodnCat=document.getElementById("secondcat")
 
 
 New.onclick=function(){
-    alert("New Products Page")
+    secodnCat.style.visibility="hidden"
+    alert("Visit Clothing Catgeory")
 }
 // clothes.onclick=function(){
 //    window.location.href="../HTML/5-Men.html"
 // }
 Color.onclick=function(){
-    alert("19.91 Colour Page")
+    secodnCat.style.visibility="hidden"
+    alert("Visit Clothing Catgeory")
 }
 Shoes.onclick=function(){
-    alert("Shoes Page")
+    secodnCat.style.visibility="hidden"
+    alert("Visit Clothing Catgeory")
 }
 Access.onclick=function(){
-    alert("Accessories Page")
+    secodnCat.style.visibility="hidden"
+    alert("Visit Clothing Catgeory")
 }
 Bags.onclick=function(){
-    alert("Bags Page")
+    secodnCat.style.visibility="hidden"
+    alert("Visit Clothing Catgeory")
 }
 Pacific.onclick=function(){
-    alert("Pascific Page")
+    secodnCat.style.visibility="hidden"
+    alert("Visit Clothing Catgeory")
 }
 joinlife.onclick=function(){
-    alert("Join Life Page")
+    secodnCat.style.visibility="hidden"
+    alert("Visit Clothing Catgeory")
 }
 
 var trouser=document.getElementById("trouser")

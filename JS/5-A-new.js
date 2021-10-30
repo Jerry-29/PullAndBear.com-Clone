@@ -85,7 +85,7 @@ logoclick.onclick=function(){
 }
 var red=document.getElementById("main")
 red.onclick=function(){
-    alert("Visit Trouser Section .This Page is Dummy")
+    alert("Visit Trouser Section .This Page is Static")
 }
 var backg=document.getElementById("backbtn")
 backg.onclick=function(){
