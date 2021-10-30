@@ -372,3 +372,24 @@ joinLife.onclick=function(){
     alert("Welcome to  Join Life Page")
 }
 
+var cartTxt=document.getElementById("cartItemNumber")
+let RetriveData=JSON.parse(localStorage.getItem("pullandbearProductCart"))
+// cartTxt.innerText=RetriveData.length 
+window.addEventListener("load",load)
+function load(){
+    if(RetriveData.length>0){
+        cartTxt.innerText=RetriveData.length 
+    }else{
+        cartTxt.innerText=""
+    }
+   
+}
+var cartTxtn=document.getElementById("cartItemNumber")
+var cartBody=document.getElementById("notxt")
+ cartBody.onclick=function(){
+    if(RetriveData.length==0){
+        alert("Cart is Empty")
+    }else{
+        window.location.href="../HTML/cartPage.html"
+    }
+ }

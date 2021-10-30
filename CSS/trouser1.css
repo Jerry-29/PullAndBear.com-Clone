@@ -152,13 +152,14 @@ margin-left: 40px;
     height: 80%;
 } */
 #cartItemNumber{
-    font-size: 16px;
+    font-size: 11px;
     width: 20px;
-    margin-top: 90%;
-    right: 70%;
+    margin-top: 100%;
+    right: 60%;
     position: relative;
     z-index: 100;
     font-weight: 600;
+
 }
 #bt{
    margin-left: -40%;
@@ -228,3 +229,9 @@ margin-left: 40px;
  #women1{
      cursor: pointer;
  }
+ #cartborder{
+    border-radius: 20px;
+    border: 2px solid #6fd5a4;
+    height: 55px;
+    cursor: pointer;
+}
