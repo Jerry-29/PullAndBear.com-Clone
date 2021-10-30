@@ -72,10 +72,10 @@ logoclick.onclick=function(){
     window.location.href="../HTML/4-MenOrWomen.html"
 }
   
-var back=document.getElementById("goback")
-back.onclick=function(){
-    window.location.href="../HTML/trousersProducts.html"
-}
+// var back=document.getElementById("goback")
+// back.onclick=function(){
+//     window.location.href="../HTML/trousersProducts.html"
+// }
   
 // let addwishlist=document.getElementById("wishlistbutton")
 // addwishlist.onclick=function(){
@@ -183,3 +183,50 @@ var cartBody=document.getElementById("notxt")
  var id=Math.floor(Math.random()*1291738)
  var refid=document.getElementById("refid")
  refid.innerHTML="Ref "+ id
+
+ var n1txt=document.getElementById("men1")
+var n2txt=document.getElementById("women1")
+var popOut=document.getElementById("popout")
+var poptxt=document.getElementById("poptext1")
+var p1=document.getElementById("showdiv")
+var n1=document.getElementById("line2")
+poptxt.onmouseover=function(){
+    popOut.style.width="50%"
+    popOut.style.backgroundColor="white"
+    poptxt.style.marginTop="9%"
+    poptxt.style.marginLeft="1%"
+    poptxt.style.color="black"
+    n1txt.style.color="black"
+    n2txt.style.color="black"
+    n1.style.backgroundColor="black"
+}
+poptxt.onpointerout=function(){
+    popOut.style.width="20%"
+    popOut.style.backgroundColor="inherit"
+    poptxt.style.marginTop="25%"
+    poptxt.style.marginLeft="4%"
+    // poptxt.style.color="white"
+    // n1txt.style.color="whitesmoke"
+    // n2txt.style.color="whitesmoke"
+    n1.style.backgroundColor="black"
+}
+var Newclick=document.getElementById("Newclick")
+var Clothingclick=document.getElementById("Clothingclick")
+var shoesclick=document.getElementById("shoesclick")
+var accessoriesclick=document.getElementById("accessoriesclick")
+var joinLife=document.getElementById("joinLife")
+Newclick.onclick=function(){
+    alert("Welcome to New Arrival Page")
+}
+Clothingclick.onclick=function(){
+    window.location.href="../HTML/5-men.html"
+}
+shoesclick.onclick=function(){
+    alert("Welcome to Shoes Page")
+}
+accessoriesclick.onclick=function(){
+    alert("Welcome to Accessiories Page")
+}
+joinLife.onclick=function(){
+    alert("Welcome to  Join Life Page")
+}

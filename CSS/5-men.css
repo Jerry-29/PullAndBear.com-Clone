@@ -15,6 +15,15 @@ body{
     border: 1px solid white;
     cursor: pointer;
 }
+#n1{
+    display: flex;
+}
+#line2{
+    height: 18px;
+    width: 1px;
+    background-color: white;
+    border: none;
+}
 
 #full_img>h1,
 #full_img2>h1 {
@@ -133,6 +142,7 @@ body{
 
 #n1 {
     margin-left: 2%;
+    color: whitesmoke;
 }
 
 * {
@@ -142,6 +152,7 @@ body{
     font-size: larger;
     text-decoration: none;
     color: white;
+    /* font-weight: bold; */
 
 }
 
@@ -160,4 +171,37 @@ body{
 #nav a {
     padding: 5px 5px;
     margin: 0% 10px;
+}
+#popout{
+    position: absolute;
+    z-index: -1;
+    width: 20%;
+    top:1px;
+    height: 600px;
+    margin-left: 0.1%;
+    border: none;
+    background-color: inherit;
+    text-align: justify;
+}
+#poptext{
+    margin-top: 30%;
+    margin-left: 12%;
+    color:white;
+    font-family:Graphik Cond Web, Graphik, sans-serif;
+    font-weight: 900;
+    line-height: 25px;
+    font-style: normal;
+}
+
+.poptxtclass{
+    cursor: pointer;
+}
+.poptxtclass:hover{
+    font-size: 25px;
+}
+#n1>a{
+    color: whitesmoke;
+}
+#men1{
+    color:whitesmoke
 }

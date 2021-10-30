@@ -6,7 +6,7 @@
 }
 #head{
     display: grid;
-    grid-template-columns: 8% 25% 30%;
+    grid-template-columns: 10% 25% 30%;
     gap: 15%;
 }
 #containerImg{
@@ -23,6 +23,7 @@
     grid-template-rows: auto;
     
 }
+
 img{
     width: 100%;
 }
@@ -130,6 +131,7 @@ margin-left: 40px;
    text-align: center;
   justify-content: center;
   cursor: pointer;
+  margin-left: 300%;
 }
 /* #headlogo{
     margin-left: 140px;
@@ -152,8 +154,8 @@ margin-left: 40px;
 #cartItemNumber{
     font-size: 16px;
     width: 20px;
-    margin-top: 32%;
-   right: 150%;
+    margin-top: 90%;
+    right: 70%;
     position: relative;
     z-index: 100;
     font-weight: 600;
@@ -163,7 +165,66 @@ margin-left: 40px;
    margin-top: -18%;
 
 }
+#headlogo{
+    margin-right: -10%;
+    margin-top: -4%;
+ }
 
 #logoclick{
     cursor: pointer;
+    margin-left: 30%;
 }
+#n1{
+    display: flex;
+    gap: 5px;
+    position: relative;
+    z-index: 11;
+    margin-left: -1%;
+    margin-top: 0%;
+    position: fixed;
+}
+#popout{
+    position: absolute;
+    z-index: 10;
+    width: 20%;
+    top:1px;
+    height: 600px;
+    margin-left: -2%;
+    border: none;
+    background-color: inherit;
+    text-align: justify;
+    position: fixed;
+}
+#poptext1{
+    display: block;
+    margin-top: 25%;
+    margin-left: 5%;
+    color: black;
+    font-family:Graphik Cond Web, Graphik, sans-serif;
+    font-weight: 900;
+    line-height: 35px;
+    font-style: normal;
+}
+.poptxtclass{
+    cursor: pointer;
+}
+.poptxtclass:hover{
+    font-size: 25px;
+}
+#n1>a{
+    color:black;
+}
+#men1{
+    color:black;
+    cursor: pointer;
+}
+#line2{
+    height: 20px;
+    width: 2px;
+    margin-top: 0px;
+    background-color: black;
+    border: none;
+}
+ #women1{
+     cursor: pointer;
+ }

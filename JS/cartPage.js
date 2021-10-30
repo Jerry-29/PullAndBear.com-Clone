@@ -62,10 +62,11 @@ function showprodcts() {
     //   }
     //   localStorage.setItem("pullandbearProductCart",JSON.stringify(PWCart))
     // }
-    var homback=document.getElementById("backhomebutton")
-    homback.onclick=function(){
-        window.location.href="../HTML/4-MenOrWomen.html"
-    }
+    // var homback=document.getElementById("backhomebutton")
+    // homback.onclick=function(){
+    //     window.location.href="../HTML/4-MenOrWomen.html"
+    // }
+
   
      function pushInCart(index){
          PWCart.push(PWCart[index])
@@ -90,10 +91,10 @@ function showprodcts() {
         console.log(sum);
         var tPay=document.getElementById("finalAmount")
         tPay.innerHTML="Pay $ "+sum
-        if(sum==0){
-            var bk=document.getElementById("backhomebutton")
-            bk.style.display="block"
-        }
+        // if(sum==0){
+        //     var bk=document.getElementById("backhomebutton")
+        //     bk.style.display="block"
+        // }
     }
     sum();
     
@@ -304,7 +305,7 @@ logoclick.onclick=function(){
                 flag=false
                 alert("Fill Correct Details") 
             }
-            else if(cardnum.value.length!=14){
+            else if(cardnum.value.length!=16){
                 flag=false
                 alert("Invalid Card Details")
             }
@@ -335,8 +336,16 @@ logoclick.onclick=function(){
         stordiv.style.visibility="hidden"
         hom1.style.visibility="hidden"
     }
-    
-   
+    var cancelPay=document.getElementById("CancelPay")
+    cancelPay.onclick=function(){
+        window.location.href="../HTML/cartPage.html"
+    }
+    var gobackOpt=document.getElementById("gobackopt")
+    gobackOpt.onclick=function(){
+        window.location.href="../HTML/trousersProducts.html"
+    }
 }
 showprodcts();
+
+
 
