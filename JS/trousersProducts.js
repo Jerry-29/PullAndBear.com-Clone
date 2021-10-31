@@ -389,8 +389,8 @@ var cartBody=document.getElementById("notxt")
 var cartH=document.getElementById("searchsigncart")
  cartBody.onclick=function(){
     if(RetriveData.length==0){
-        alert("Cart is Empty")
         cartH.style.visibility="hidden"
+        alert("Cart is Empty")
     }else{
         cartH.style.visibility="visible"
         window.location.href="../HTML/cartPage.html"
