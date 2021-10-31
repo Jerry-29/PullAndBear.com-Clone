@@ -386,10 +386,14 @@ function load(){
 }
 var cartTxtn=document.getElementById("cartItemNumber")
 var cartBody=document.getElementById("notxt")
+var cartH=document.getElementById("searchsigncart")
  cartBody.onclick=function(){
     if(RetriveData.length==0){
         alert("Cart is Empty")
+        cartH.style.visibility="hidden"
     }else{
+        cartH.style.visibility="visible"
         window.location.href="../HTML/cartPage.html"
     }
  }
+ 
