@@ -9,6 +9,9 @@
     padding: 0%;
     border: 1px solid white;
 }
+#full_img>a{
+    position: relative;
+}
 #full_img > a> h1{
     margin: 25%;
     font-size: 50px;
