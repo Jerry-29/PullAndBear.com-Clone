@@ -220,7 +220,7 @@ Newclick.onclick=function(){
     alert("Welcome to New Arrival Page")
 }
 Clothingclick.onclick=function(){
-    window.location.href="../HTML/5-men.html"
+    window.location.href="../HTML/4-MenOrWomen.html"
 }
 shoesclick.onclick=function(){
     alert("Welcome to Shoes Page")

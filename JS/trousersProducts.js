@@ -357,19 +357,19 @@ var shoesclick=document.getElementById("shoesclick")
 var accessoriesclick=document.getElementById("accessoriesclick")
 var joinLife=document.getElementById("joinLife")
 Newclick.onclick=function(){
-    alert("Welcome to New Arrival Page")
+    alert("Visit CLothing Page")
 }
 Clothingclick.onclick=function(){
-    window.location.href="../HTML/5-men.html"
+    window.location.href="../HTML/4-MenOrWomen.html"
 }
 shoesclick.onclick=function(){
-    alert("Welcome to Shoes Page")
+    alert("Visit CLothing Page") 
 }
 accessoriesclick.onclick=function(){
-    alert("Welcome to Accessiories Page")
+    alert("Visit CLothing Page")
 }
 joinLife.onclick=function(){
-    alert("Welcome to  Join Life Page")
+    alert("Visit CLothing Page")
 }
 
 var cartTxt=document.getElementById("cartItemNumber")
