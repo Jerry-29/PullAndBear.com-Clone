@@ -1,0 +1,375 @@
+* {
+  font-family: Graphik Cond Web, Graphik, sans-serif;
+}
+#cartDiv {
+  width: 100%;
+  display: flex;
+  gap: 1%;
+  height: 590px;
+  
+}
+#typeOfDeliveryDiv {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: relative;
+}
+#productDiv {
+  width: 28%;
+  height: 490px;
+}
+#logodiv {
+  width: 30%;
+  margin: auto;
+  margin-top: 0px;
+}
+#LOGO1 {
+  width: 100%;
+}
+span {
+  border-radius: 50%;
+  height: 20px;
+  width: 25px;
+  margin-top: -6%;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+#orderStatus {
+  display: flex;
+  width: 82%;
+  height: 100px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+hr {
+  height: 2px;
+  width: 40%;
+  margin-top: -5%;
+  background-color: black;
+}
+#step3 {
+  color: black;
+  border: 1px solid grey;
+  text-align: center;
+  background-color: white;
+}
+#deltype {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hom1 {
+  width: 40%;
+  height: 160px;
+  margin-bottom: 140px;
+  border: 1px solid black;
+}
+.hom2{
+    width: 40%;
+  height: 160px;
+  border: 1px solid black;
+}
+.store {
+  width: 40%;
+  height: 160px;
+}
+.homeicon {
+  text-align: center;
+  margin-top: 5%;
+}
+.homeicon + h4 {
+  text-align: center;
+  margin-top: 0px;
+}
+.home p {
+  text-align: center;
+  line-height: 8px;
+}
+.addinp {
+  width: 3%;
+  height: 5%;
+  margin-left: 24%;
+  position: fixed;
+  cursor: pointer;
+}
+.free {
+  color: green;
+}
+#OrderSummary {
+  width: 100%;
+  border: 1px solid black;
+  color: gray;
+  height: 45px;
+}
+#totalCartValue {
+  position: fixed;
+  width: 27.7%;
+  font-weight: 700;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  gap: 10px;
+}
+#totalCartValue p{
+  width: 60%;
+}
+#addItem {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-flow: column;
+  overflow-y: scroll;
+}
+
+#Productimg {
+  width: 80%;
+  height: 80%;
+  padding: 4%;
+}
+#flexitems {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+#div1 {
+  width: 59%;
+}
+#div2 {
+  width: 40%;
+}
+#address{
+    width: 96%;
+    z-index: 15;
+    border: 1px solid grey;
+    height: 320px;
+    margin-top: -180px;
+    visibility: hidden;
+    margin-right: 6%;
+}
+#enteradd{
+    margin:0px;
+    margin-left: 15px;
+}
+#addressInp {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  margin-left: -15px;
+  display: grid;
+  grid-template-columns: repeat(2, 42%);
+  gap: 10px;
+  /* flex-wrap: nowrap;
+   justify-content:space-evenly; */
+  z-index: 9;
+}
+#addressInp input {
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+.proceed {
+  color: black;
+  width: 140px;
+  margin-left: 120px;
+  margin-top: 15px;
+  border-radius: 20px;
+  border: 1px solid grey;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.proceed:hover{
+    background-color: black;
+    color: white;
+}
+#addressHub{
+    font-size: 100%;
+    font-weight: 500;
+    margin-top: -120px;
+    visibility: hidden;
+
+}
+.pelement{
+    margin: 4px;
+    font-size: 77%;
+}
+#quant{
+    width: 25px;
+    color: black;
+    margin-left: 10px;
+}
+.und{
+    text-decoration: underline;
+    line-height: 16px !important;
+}
+#addmore{
+    margin-left: 4%;
+    border-radius: 10px;
+    border: none;
+    height: 22px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+#addmore:hover{
+    background-color: black;
+    color: white;
+}
+#totalprice{
+    margin-left: 1%;
+}
+.OS{
+    margin-left: 40%;
+}
+
+#remButton{
+    width: 50%;
+    height: 25px;
+    font-size: 60%;
+    border-radius: 20px;
+    border: none;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+#remButton:hover{
+    background-color: black;
+    color: white;
+    font-size: 60%;
+    font-weight: 300;
+}
+#itemNo{
+    width: 70px;
+    color: black;
+    margin-left: 1%;
+}
+#paymentdetail{
+  visibility: hidden;
+  position: relative;
+  z-index: 0;
+  width: 200%;
+  height: 160%;
+ bottom: 230%;
+
+}
+ .paydiv{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+display: grid;
+grid-template-columns: repeat(2,44%);
+padding: 2%;
+gap: 10%;
+}
+
+.paydiv>div{
+  border: 1px solid black;
+}
+.flex{
+  display: flex;
+}
+
+.dbtselect{
+ width: 20%;
+ height: 20%;
+ border: 1px solid;
+ margin-top: 5%;
+ cursor: pointer;
+}
+#paydetail{
+  visibility: hidden;
+  position: relative;
+  z-index: 100000;
+  width: 200%;
+  height: 200%;
+  bottom: 400%;
+  display: flex;
+  flex-direction: column;
+}
+#finalpaydetail{
+  position: relative;
+  display: grid;
+  height: 60%;
+  grid-template-columns: 100%;
+  flex-direction: column;
+  gap: 5%;
+  justify-items: center;
+
+  
+}
+#finalpaydetail>input{
+ width: 80%;
+ margin: .2%;
+ position: relative;
+ margin-top: 10px;
+ height: 70%;
+ cursor: pointer;
+ z-index: 100000
+}
+#finalpaydetail>h4{
+  margin: 1%;
+}
+
+.finalpaydiv{
+  width: 100%;
+  position: relative;
+  height: 30%;
+  margin: .2%;
+  margin-left: 30%;
+  margin-top: 10px;
+  display: flex;
+  
+}
+.finalpay{
+   /* margin: 10%; */
+   margin-right: 5%;
+   width: 18%;
+   height: 30%;
+   margin-top: 5%;
+   border-radius: 20px;
+   border: 1px solid lightslategray;
+   font-size: 12px;
+   font-weight: 300;
+
+}
+.finalpay:hover{
+  background-color: black;
+  color: whitesmoke;
+  z-index: 1000;
+  position: relative;
+} 
+#debitimg{
+  width: 30%;
+}
+.logonb{
+  width: 30%;
+}
+.logoupi{
+  width: 30%;
+  height: 40%;
+  margin-left: 10%;
+  margin-top: 6%;
+}
+#logodiv{
+  cursor: pointer;
+}
+#backhom{
+width: 100%;
+
+}
+#gobackopt{
+  font-size: 40px;
+  margin-top: -5%;
+  cursor: pointer;
+  margin-left: 100%;
+}

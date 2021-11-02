@@ -1,0 +1,155 @@
+* {
+    font-family: Graphik Cond Web, Graphik, sans-serif;
+}
+body{
+    width: 100%; height: 100%;
+}
+#full_img {
+    background-image: url("https://static.pullandbear.net/2/static2/itxwebstandard/images/home/2021-09/24/1400/Newin_woman_v2.jpg?v=20210929024001");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    border: 1px solid white;
+}
+
+#full_img>h1,
+#full_img2>h1 {
+    text-align: center;
+    margin-top: 30%;
+    margin-bottom: 0%;
+    font-size: 48px;
+    color: white;
+}
+#full_img>button{
+    margin-bottom: 10%;
+}
+#newshop {
+    margin-left: 48%;
+    color: white;
+    border: 1px solid white;
+    margin-top: 15px;
+}
+
+.shop {
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid black;
+    padding: 8px 13px;
+    display: inline-block;
+}
+
+.shop:hover {
+    color: white;
+    background-color: black;
+}
+
+#newshop:hover {
+    color: black;
+    background-color: white;
+}
+
+#whtsp {
+    background-color: rgb(214, 250, 192);
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#cat {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.product>h1 {
+    margin: 2% 0% 2.5% 0%;
+    font-size: 20px;
+}
+.product > img{
+    width: 100%;
+    height: 80%;
+}
+
+#full_img2 {
+    background-image: url("https://static.pullandbear.net/2/static2/itxwebstandard/images/home/2021-09/24/1400/Denim_woman.jpg?v=20210929024001");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px 10px 0px;
+    border: 1px solid white;
+}
+
+#full_img2>h1 {
+    font-size: 30px;
+    margin-top: 35%;
+}
+#full_img2>button{
+    margin-bottom: 10%;
+}
+
+#myVideo {
+    width: 100%;
+}
+
+#last>h1 {
+    font-size: 13px;
+    text-align: center;
+}
+
+#last>h2 {
+    font-size: 13px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#last>h3 {
+    font-size: 15px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#last>p {
+    font-size: 14px;
+    margin: 0%;
+    text-align: center;
+}
+
+#nav {
+    position: fixed;
+    display: grid;
+    grid-template-columns:  3.5fr 1fr;
+}
+
+#n1 {
+    margin-left: 2%;
+}
+
+#n1>a {
+    font-size: larger;
+    text-decoration: none;
+    color: white;
+
+}
+
+#n2 {
+    display: flex;
+}
+#search{
+    margin-top: 1%;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* height: 55%;         
+    width: 80%; */
+}
+#nav a {
+    padding: 5px 5px;
+    margin: 0% 10px;
+}

@@ -1,0 +1,113 @@
+*{
+    font-family: Graphik Cond Web, Graphik, sans-serif;
+}
+#full_img{
+    background: url("https://static.pullandbear.net/2/static2/itxwebstandard/responsive/genderselector/man.jpg?20210929024001") right top no-repeat, url("https://static.pullandbear.net/2/static2/itxwebstandard/responsive/genderselector/woman.jpg?20210929024001") left top repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    border: 1px solid white;
+}
+#full_img>a{
+    position: relative;
+}
+#full_img > a> h1{
+    margin: 25%;
+    font-size: 50px;
+    color: white;
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+    display: inline-block;
+}
+#full_img > a> h2{
+    margin:5% 20% 25% 20%;
+    font-size: 50px;
+    color: white;
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+    display: inline-block;
+    
+}
+#icondiv{
+    width: 40px;
+    z-index: 1;
+    position: fixed;
+    left: 2%;
+   top: 4%;
+   font-size: 26px;
+}
+#popout{
+    visibility: hidden;
+    z-index: 2;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    position: fixed;
+   background-color: white;
+}
+#popin{
+    z-index:0;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: inherit;
+}
+#n1{
+    display: flex;
+    gap: 9px;
+    margin: 3%;
+}
+#line2{
+    height: 16px;
+    width: 2px;
+    background-color: black;
+    border: none;
+    margin-top: 2px;
+}
+#poptextdiv{
+    margin-left: 3%;
+    font-family: "Graphik Cond Web", Graphik, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 1800;
+    font-weight: bolder;
+    line-height: 18px;
+    font-style: normal;
+}
+#poptextdiv>h2{
+    cursor: pointer;
+}
+#poptextdiv>h4{
+    font-size: 13px;
+}
+#poptextdiv>h2:hover{
+    font-size: 24px;
+}
+#poptextdiv>h4:hover{
+    font-size: 13.5px;
+}
+#newsup{
+    font-size: 10px;
+    color: #f8b800;
+    font-weight: 600;
+    font-style: normal;
+}
+#men1{
+    color: black;
+}
+#women1{
+    color: black;
+}
+#optoindiv{
+    display: flex;
+}
+#secondcat{
+    margin-left: 20%;
+    visibility: hidden;
+}
+#secondcat>h4{
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 550;
+    line-height: 18px;
+}

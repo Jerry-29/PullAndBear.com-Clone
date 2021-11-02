@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Shopping Bag</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/cartPage.css">
+</head>
+<body>
+    <div id="cartDiv">
+        <div id="gobackoptdiv"><p id="gobackopt">&#x2039</p></div>
+        <div id="typeOfDeliveryDiv">
+            <div id="logodiv">
+                <img id="LOGO1" src="../Images/logo1.png">
+            </div>
+            <div id="orderStatus">
+                <span id="step1">1</span>
+                <hr>
+                <span id="step2">2</span>
+                <hr>
+                <span id="step3">3</span>
+            </div>
+            <div id="deltype">
+                <div id="home2" class="home hom1">
+                  <div id="homeclickdiv">
+                    <input id="homeclicked" class="addinp" type="radio">
+                    <p class="homeicon">
+                     <i class="fa fa-home" style="font-size:36px"></i>
+                    </p>
+                    <h4>Home Delivery</h4>
+                     <p id="delday">Monday</p>
+                     <p class="free">Free</p>
+                  </div>
+                    <div id="address">
+                        <h3 id="enteradd">Enter Your Address </h3>
+                        <div id="addressInp">
+                         <input id="ad1" placeholder="Name" type="text" name="" class="addinp">
+                        <input id="ad2" placeholder="House No." type="text" name="" class="addinp">
+                        <input id="ad3" placeholder="Area" type="text" name="" class="addinp">
+                        <input id="ad4" placeholder="Landmark" type="text" name="" class="addinp">
+                        <input id="ad5" placeholder="Pin Code" type="number" name="" class="addinp">
+                        <input id="ad6" placeholder="City" type="text" name="" class="addinp">
+                        <input id="ad7" placeholder="State" type="text" name="" class="addinp">
+                        <input id="ad8" placeholder="Mobile No." type="text" name="" class="addinp" >
+                        <button  class="proceed"  id="subbtn1">Proceed</button>
+                        </div>
+                    </div>
+                    <div id="paymentdetail">
+                     <div class="paydiv">
+                        <div id="debitcardClicked" class="flex">
+                            <input id="dbt1click" class="dbtselect" type="radio">
+                            <h4>Debit Card</h4>
+                            <img id="debitimg" src="../Images/debitCard.png"/>
+                        </div>
+                        <div class="Netbankinselected flex">
+                            <input id="nbselect" class="dbtselect" type="radio">
+                            <h4>Net Banking</h4>
+                            <img class="logonb" src="../Images/netbanking.png"/>
+                        </div>
+                        <div class="UPIQR flex">
+                            <input id="upiselected" class="dbtselect" type="radio">
+                            <h4>UPI QR Scan</h4>
+                            <img class="logoupi" src="../Images/upilogo.png"/>
+                        </div>
+                        <div class="CODselected flex">
+                            <input id="codselected" class="dbtselect" type="radio">
+                            <h4>Cash On Delivery</h4>
+                            <img class="logonb" src="../Images/codlogo.png"/>
+                        </div>
+                     </div>
+                    </div>
+                    <div id="paydetail">
+                      <div id="finalpaydetail">
+                          <h4 id="payhead">Enter your Card Details</h4>
+                        <input type="text" name="CardHolderName" id="inp1" placeholder="Card Holder Name">
+                        <input type="text" name="CardNumber" id="inp2" placeholder="Card Number">
+                        <input type="text" name="CVV" id="inp3" placeholder="CVV">
+                        <input type="text" name="EXP" id="inp4" placeholder="Expiry Date MM/YYYY">
+                      </div>
+                      <div class="finalpaydiv">
+                          <button id="finalAmount" class="finalpay">Pay</button>
+                          <button id="CancelPay" class="finalpay">Cancel Payment</button>
+                      </div>
+                    </div>
+                </div>
+                
+                <div id="StoreDelDiv" class="home hom2">
+                  <div id="storeHide">
+                    <input id="storeclicked" class="addinp" type="radio">
+                    <p id="storeclickedP"  class="homeicon hub">
+                      <i  class='fas fa-store-alt hub' style='font-size:36px'></i>
+                    </p>
+                 <h4 id="P2">Store Delivery</h4>
+                     <p id="p3">Monday</p>
+                     <p id="p4" class="free">Free</p>
+                  </div>
+                     <div id="addressHub">
+                       <p class="und">Please collect your Product from Our Store</p>
+                       <p>Pull&Bear Hub 25</p>
+                       <p>Banglore</p>
+                       <p>India</p>
+                       <a style="margin-left: 40%;" href="https://www.google.com/maps/search/masai+school+address/@19.2636179,74.9592297,6z">GoogleMap</a>
+                       <button class="proceed" id="subbtn2">Proceed </button>
+                    </div>
+            </div>
+        </div>
+       
+    </div>
+    <div id="productDiv">
+        <div id="OrderSummary">
+            <p class="OS">Order summery</p>
+        </div>
+        <div id="addItem">
+           <div id="flexitems">
+               
+           </div>
+        </div>
+        <div id="totalCartValue">
+           <p id="itemNo">Item No</p>
+           <p id="totalprice"></p>
+        </div>
+   </div>
+    </div>
+    
+</body>
+</html>
+<script src="../JS/cartPage.js"></script>

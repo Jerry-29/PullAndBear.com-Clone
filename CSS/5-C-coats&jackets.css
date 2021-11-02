@@ -1,0 +1,75 @@
+* {
+   font-family: Graphik Cond Web, Graphik, sans-serif;
+}
+
+#main {
+   margin: 5% 5% 10% 5%;
+   height: 600px;
+   display: grid;
+   grid-template-columns: 20% 20% 20% 20%;
+   grid-gap: 5%;
+   justify-content: center;
+   z-index: 1;
+   font-size: 14px;
+   cursor: pointer;
+}
+
+img {
+   width: 100%;
+}
+
+
+
+#slh1 {
+   justify-self: left;
+   width: 200px;
+   height: 60px;
+   font-size: larger;
+   color: darkturquoise;
+   background-color: white;
+   border: 4px solid royalblue;
+}
+
+#slh1:hover {
+   background-color: black;
+   border-radius: 10px;
+   box-shadow: blanchedalmond;
+   border: 4px solid orange;
+}
+
+#shl2 {
+   justify-self: left;
+   width: 200px;
+   height: 60px;
+   font-size: larger;
+   color: darkturquoise;
+   background-color: white;
+   border: 4px solid royalblue;
+}
+
+#shl2:hover {
+   color: white;
+   background-color: black;
+}
+
+/* button {
+   border-radius: 10px;
+   background: transparent;
+   border: 1px solid black;
+   padding: 8px 13px;
+   display: inline-block;
+
+} */
+#main button:hover {
+   background-color: black;
+   color: white;
+}
+#backbtn{
+   position: relative;
+   z-index: 10;
+   bottom: 70px; 
+   width: 30px;
+   cursor: pointer;
+}#logoclick{
+   cursor: pointer;
+}

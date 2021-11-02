@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../CSS/trouseersProduct.css">
+</head>
+<body>
+  <div>
+    <div id="n1">
+      <a id="men1" href="5-men.html">MEN</a>
+     <span id="line"><hr id="line2"></span>
+      <a id="women1" href="6-women.html">WOMEN</a>
+  </div>
+  <div id="popout">
+ <div id="poptext1">
+ <div id="textnavdiv">
+  <span><h2 id="Newclick" class="poptxtclass">NEW</h2></span>
+  <h2 id="Clothingclick" class="poptxtclass">CLOTHING</h2>
+  <h2 id="shoesclick" class="poptxtclass">SHOES</h2>
+  <h2 id="accessoriesclick" class="poptxtclass">ACCESSIORIES</h2>
+  <h2 id="joinLife" class="poptxtclass">JOIN LIFE</h2>
+ </div>
+ </div>
+  </div>
+  </div>
+    <div id="topdiv">
+        <img id="home" src="../Images/logo1.png" style="width:25%;margin-left: 35%;" />
+        <div id="searchsigncart">
+          <!-- <label id="cartname"></label> <a id="anchor"><button  id="addcart"><p id="adtxt">Cart &nbsp; &#128722</p></button></a>  -->
+          <p id="notxt">
+          <button id="cartborder"> <img style="width: 14px;height: 12px;" src="../Images/cart.png"></button><span id="cartItemNumber"></span>
+          </p>
+        </div>
+       <div id="topbtn">
+        <button id="flt1" class="filterbtn " >See 2</button>
+        <button id="flt2" class="filterbtn">Filter</button>
+       </div>
+    </div>
+    <!-- <button class="hl" id="slh1" onclick="slh()"></button>
+    <button class="hl" id="shl2" onclick="shl()"></button> -->
+      <!-- Change Me -->
+    <!-- <label id="cbtn">Cart<a href="trousersCart.html"><button  id="cbtn"><p class="tbt">&#128722</p><p id="btxt"></p></button></a></label> -->
+  <div >
+    <div id="products">
+    </div>
+    <div id="shownavbar" >
+      <div id="NavBarGo">
+        <div id="navElements">
+         <p id="menclick">Men</p>
+         <p id="women">Women</p>
+         <p id="jacket">Jackets</p>
+         <p id="newsect">New</p>
+        </div>
+       
+       </div>
+       <div id="morediv">
+
+      </div>
+    </div>
+  </div>
+    <div id="filterdiv">
+      <div id="filteropt">
+          <div id="filterhead">
+            <h4>Filter</h4>
+           <div id="filterHide">
+            <span>Hide Filter</span>
+            <button id="hidefilterbtn">&#10005</button>
+           </div>
+          </div>
+        <div>
+            <h4>Order by</h4>
+           <div id="filterByPriceDiv">
+            <button onclick="slh()">Priced From Low to High</button>
+            <button onclick="shl()">Priced From Low to High</button>
+           </div>
+         </div>
+         <div>
+             <h4>Colour</h4>
+            <div id="filterByColorDiv">
+               <div id="blackcolordiv">
+                <button id="blackSelect" style="background-color: black;"></button>
+                <p>Black</p>
+               </div>
+                <div id="bluecolordiv">
+                    <button id="blueSelect" style="background-color: blue"></button>
+                <p>Blues</p>
+                </div>
+            </div>
+           </div>
+         <div id="filterBySizeDivparent">
+          <h4>Sizes</h4>
+          <div id="filterBySizeDiv">
+              <button id="sizeX">X</button>
+              <button>L</button>
+              <button>M</button>
+              <button>S</button>
+          </div>
+         </div>
+         <div>
+            <h4 style="margin: auto;">Price Range</h4>
+            <input type="range" name="price range" id="priace range" >
+            <p id="showprice"></p>
+         </div>
+      </div>
+    </div>
+</body>
+</html>
+<script src="../JS/trousersProducts.js"></script>
